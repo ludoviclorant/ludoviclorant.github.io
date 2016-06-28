@@ -1,8 +1,8 @@
+@import "https://fonts.googleapis.com/css?family=Oswald";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import "https://fonts.googleapis.com/css?family=Oswald";
 html {
   box-sizing: border-box; }
 
@@ -54,7 +54,7 @@ table {
 
 .masthead {
   font-family: 'Oswald', sans-serif;
-  font-size: 144px;
+  font-size: 120px;
   line-height: 1.2;
   color: #55A9FF;
   text-transform: uppercase; }
