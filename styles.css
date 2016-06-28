@@ -1,8 +1,4 @@
 @import "https://fonts.googleapis.com/css?family=Oswald";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html {
   box-sizing: border-box; }
 
@@ -52,11 +48,32 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  font-size: 100%; }
+
+body {
+  font-size: 1rem; }
+
+.nav {
+  padding: 144px 144px 72px; }
+
 .masthead {
   font-family: 'Oswald', sans-serif;
   font-size: 120px;
+  font-size: 7.5rem;
   line-height: 1.2;
   color: #55A9FF;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 0 144px 216px; }
+
+.index-face-bg {
+  z-index: -1; }
+
+.index-face-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,19 +2,14 @@
 // CSS CORE INCLUDES //
 ///////////////////////
 
-@import "core/fonts";
-@import "core/reset";
+@import "core/functions";
+@import "core/mixins";
 @import "core/variables";
 
-///////////////////
-// ONE PAGE CODE //
-///////////////////
-.masthead {
+@import "core/fonts";
+@import "core/reset";
+@import "core/units";
 
-	font-family: 'Oswald', sans-serif;
-	font-size: 120px;
-	line-height: 1.2;
-	color: $brand-blue;
-	text-transform: uppercase;
+@import "page";
 
-}
+@import "patterns/box";

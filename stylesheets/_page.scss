@@ -1,0 +1,24 @@
+.nav {
+
+	padding: 144px 144px 72px;
+
+}
+
+.masthead {
+
+	font-family: 'Oswald', sans-serif;
+	@include rem(font-size, 7.5rem);
+	line-height: 1.2;
+	color: $brand-blue;
+	text-transform: uppercase;
+
+	padding: 0 144px 216px;
+
+}
+
+.index-face-bg {
+
+	@extend %BOX-FIXED-VIEWPORT;
+	z-index: -1;
+
+}
