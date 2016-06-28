@@ -52,24 +52,45 @@ html {
   font-size: 100%; }
 
 body {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif; }
 
-.nav {
-  padding: 144px 144px 72px; }
+.s {
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-image: url("images/sprite.png"); }
+  .s.logo {
+    width: 42px;
+    height: 62px;
+    background-position: -30px 0px; }
+    .s.logo.small {
+      width: 21px;
+      height: 31px; }
 
-.masthead {
+#top-bar {
+  padding: 144px 144px 60px;
+  padding: 9rem 9rem 3.75rem; }
+
+#masthead {
   font-family: 'Oswald', sans-serif;
   font-size: 120px;
   font-size: 7.5rem;
+  padding: 0 144px 156px;
+  padding: 0 9rem 9.75rem;
   line-height: 1.2;
   color: #55A9FF;
   text-transform: uppercase;
-  padding: 0 144px 216px; }
+  mix-blend-mode: multiply; }
+  #masthead p, #masthead h1 {
+    margin-bottom: 48px;
+    margin-bottom: 3rem; }
+  #masthead span {
+    color: #F54040; }
 
-.index-face-bg {
+#masthead-fixed-bg {
   z-index: -1; }
 
-.index-face-bg {
+#masthead-fixed-bg {
   position: fixed;
   top: 0;
   left: 0;

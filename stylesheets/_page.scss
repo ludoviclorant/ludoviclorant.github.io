@@ -1,22 +1,27 @@
-.nav {
+#top-bar {
 
-	padding: 144px 144px 72px;
+	@include rem(padding, 144px 144px 60px);
 
 }
 
-.masthead {
+#masthead {
 
 	font-family: 'Oswald', sans-serif;
 	@include rem(font-size, 7.5rem);
+	@include rem(padding, 0 144px 156px);
 	line-height: 1.2;
-	color: $brand-blue;
+	color: $color-brand-blue;
 	text-transform: uppercase;
+	mix-blend-mode: multiply;
 
-	padding: 0 144px 216px;
+
+	p, h1 { @include rem(margin-bottom, 48px); }
+
+	span { color: $color-brand-red; }
 
 }
 
-.index-face-bg {
+#masthead-fixed-bg {
 
 	@extend %BOX-FIXED-VIEWPORT;
 	z-index: -1;
