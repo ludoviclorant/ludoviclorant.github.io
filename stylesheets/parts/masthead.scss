@@ -14,13 +14,7 @@
 	span { color: $color-brand-red; }
 
 	a:link, a:visited { color: $color-brand-blue; }
-	a:hover, a:active { 
-
-		color: darken($color-brand-blue, 10%);
-
-		&:before { background-color: darken($color-brand-blue, 10%); }
-
-	}
+	a:hover, a:active { color: darken($color-brand-blue, 10%); }
 
 	&-fixed-bg {
 
@@ -36,14 +30,26 @@
 	}
 
 	@media only screen and (min-width : 1024px) {
-
-		@include rem(font-size, 6rem);
+	
+		@include rem(font-size, 5rem);
 
 	}
 
 	@media only screen and (min-width : 1366px) {
 
+		@include rem(font-size, 6rem);
+
+	}
+
+	@media only screen and (min-width : 1680px) {
+
 		@include rem(font-size, 7rem);
+
+	}
+
+	@media only screen and (min-width : 1920px) {
+
+		@include rem(font-size, 8rem);
 
 	}
 

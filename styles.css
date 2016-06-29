@@ -122,8 +122,6 @@ body {
     color: #55A9FF; }
   .masthead a:hover, .masthead a:active {
     color: #228fff; }
-    .masthead a:hover:before, .masthead a:active:before {
-      background-color: #228fff; }
   .masthead-fixed-bg {
     z-index: -1; }
   @media only screen and (min-width: 768px) {
@@ -132,12 +130,20 @@ body {
       font-size: 4rem; } }
   @media only screen and (min-width: 1024px) {
     .masthead {
+      font-size: 80px;
+      font-size: 5rem; } }
+  @media only screen and (min-width: 1366px) {
+    .masthead {
       font-size: 96px;
       font-size: 6rem; } }
-  @media only screen and (min-width: 1366px) {
+  @media only screen and (min-width: 1680px) {
     .masthead {
       font-size: 112px;
       font-size: 7rem; } }
+  @media only screen and (min-width: 1920px) {
+    .masthead {
+      font-size: 128px;
+      font-size: 8rem; } }
 
 #works {
   background-color: #1E1E1E; }
