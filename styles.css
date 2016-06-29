@@ -57,8 +57,8 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .container {
-  margin: 0 32px;
-  margin: 0 2rem; }
+  margin: 0 16px;
+  margin: 0 1rem; }
 
 @media only screen and (min-width: 768px) {
   .container {
@@ -125,8 +125,8 @@ body {
 
 .masthead {
   font-family: 'Oswald', sans-serif;
-  font-size: 48px;
-  font-size: 3rem;
+  font-size: 64px;
+  font-size: 4rem;
   padding-bottom: 156px;
   padding-bottom: 9.75rem;
   line-height: 1.2;
@@ -148,19 +148,11 @@ body {
     .masthead {
       font-size: 64px;
       font-size: 4rem; } }
-  @media only screen and (min-width: 1024px) {
-    .masthead {
-      font-size: 80px;
-      font-size: 5rem; } }
   @media only screen and (min-width: 1366px) {
     .masthead {
       font-size: 96px;
       font-size: 6rem; } }
   @media only screen and (min-width: 1680px) {
-    .masthead {
-      font-size: 112px;
-      font-size: 7rem; } }
-  @media only screen and (min-width: 1920px) {
     .masthead {
       font-size: 128px;
       font-size: 8rem; } }

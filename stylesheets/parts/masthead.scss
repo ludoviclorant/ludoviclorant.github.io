@@ -1,7 +1,7 @@
 .masthead {
 
 	font-family: 'Oswald', sans-serif;
-	@include rem(font-size, 3rem);
+	@include rem(font-size, 4rem);
 	@include rem(padding-bottom, 156px);
 	line-height: 1.2;
 	color: $color-brand-blue;
@@ -31,7 +31,7 @@
 
 	@media only screen and (min-width : 1024px) {
 	
-		@include rem(font-size, 5rem);
+
 
 	}
 
@@ -43,13 +43,11 @@
 
 	@media only screen and (min-width : 1680px) {
 
-		@include rem(font-size, 7rem);
+		@include rem(font-size, 8rem);
 
 	}
 
 	@media only screen and (min-width : 1920px) {
-
-		@include rem(font-size, 8rem);
 
 	}
 
