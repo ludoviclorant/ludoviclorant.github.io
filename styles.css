@@ -81,12 +81,24 @@ body {
   display: inline-block;
   background-image: url("images/sprite.png"); }
   .s.logo {
-    width: 42px;
-    height: 62px;
-    background-position: -30px 0px; }
-    .s.logo.small {
-      width: 21px;
-      height: 31px; }
+    width: 22px;
+    height: 32px;
+    background-position: 0px 0px; }
+  @media only screen and (min-width: 768px) {
+    .s.logo {
+      width: 33px;
+      height: 48px;
+      background-position: -50px 0px; } }
+  @media only screen and (min-width: 1024px) {
+    .s.logo {
+      width: 44px;
+      height: 64px;
+      background-position: -100px 0px; } }
+  @media only screen and (min-width: 1680px) {
+    .s.logo {
+      width: 55px;
+      height: 80px;
+      background-position: -150px 0px; } }
 
 #home-hero {
   border-width: 8px;
@@ -100,8 +112,8 @@ body {
     border-width: 12px;
     border-width: 0.75rem; } }
 .top-bar {
-  padding: 144px 0 60px;
-  padding: 9rem 0 3.75rem; }
+  padding: 48px 0 32px;
+  padding: 3rem 0 2rem; }
 
 .masthead {
   font-family: 'Oswald', sans-serif;
