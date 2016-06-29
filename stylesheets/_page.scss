@@ -1,19 +1,19 @@
-header {
+#home {
 
 	@include rem(border-width, 0.75rem);
 	border-color: $color-bg-dark;
 	border-style: solid;
 	border-bottom: none;
-	
+
 }
 
-#top-bar {
+.top-bar {
 
 	@include rem(padding, 144px 144px 60px);
 
 }
 
-#masthead {
+.masthead {
 
 	font-family: 'Oswald', sans-serif;
 	@include rem(font-size, 7.5rem);
@@ -28,11 +28,44 @@ header {
 
 	span { color: $color-brand-red; }
 
+	a {
+
+		position: relative;
+		text-decoration: none;
+
+		&:before {
+
+			content: '';
+			position: absolute;
+			bottom: 0;
+			@include rem(height, 1rem);
+			width: 100%;
+			background-color: $color-brand-blue;
+
+		}	
+
+	}
+
+	a:link, a:visited { color: $color-brand-blue; }
+	a:hover, a:active { 
+
+		color: darken($color-brand-blue, 10%);
+
+		&:before { background-color: darken($color-brand-blue, 10%); }
+
+	}
+
+	&-fixed-bg {
+
+		@extend %BOX-FIXED-VIEWPORT;
+		z-index: -1;
+
+	}
+
 }
 
-#masthead-fixed-bg {
+#works {
 
-	@extend %BOX-FIXED-VIEWPORT;
-	z-index: -1;
+	background-color: $color-bg-dark;
 
 }

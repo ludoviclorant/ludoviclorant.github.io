@@ -55,6 +55,10 @@ body {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif; }
 
+.container {
+  margin: 0 24px;
+  margin: 0 1.5rem; }
+
 .s {
   background-repeat: no-repeat;
   display: inline-block;
@@ -67,18 +71,18 @@ body {
       width: 21px;
       height: 31px; }
 
-header {
+#home {
   border-width: 12px;
   border-width: 0.75rem;
   border-color: #1E1E1E;
   border-style: solid;
   border-bottom: none; }
 
-#top-bar {
+.top-bar {
   padding: 144px 144px 60px;
   padding: 9rem 9rem 3.75rem; }
 
-#masthead {
+.masthead {
   font-family: 'Oswald', sans-serif;
   font-size: 120px;
   font-size: 7.5rem;
@@ -88,16 +92,35 @@ header {
   color: #55A9FF;
   text-transform: uppercase;
   mix-blend-mode: multiply; }
-  #masthead p, #masthead h1 {
+  .masthead p, .masthead h1 {
     margin-bottom: 48px;
     margin-bottom: 3rem; }
-  #masthead span {
+  .masthead span {
     color: #F54040; }
+  .masthead a {
+    position: relative;
+    text-decoration: none; }
+    .masthead a:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 16px;
+      height: 1rem;
+      width: 100%;
+      background-color: #55A9FF; }
+  .masthead a:link, .masthead a:visited {
+    color: #55A9FF; }
+  .masthead a:hover, .masthead a:active {
+    color: #228fff; }
+    .masthead a:hover:before, .masthead a:active:before {
+      background-color: #228fff; }
+  .masthead-fixed-bg {
+    z-index: -1; }
 
-#masthead-fixed-bg {
-  z-index: -1; }
+#works {
+  background-color: #1E1E1E; }
 
-#masthead-fixed-bg {
+.masthead-fixed-bg {
   position: fixed;
   top: 0;
   left: 0;
