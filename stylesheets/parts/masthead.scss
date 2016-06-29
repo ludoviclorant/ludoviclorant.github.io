@@ -1,13 +1,12 @@
 .masthead {
 
 	font-family: 'Oswald', sans-serif;
-	@include rem(font-size, 8rem);
+	@include rem(font-size, 3rem);
 	@include rem(padding-bottom, 156px);
 	line-height: 1.2;
 	color: $color-brand-blue;
 	text-transform: uppercase;
 	mix-blend-mode: multiply;
-
 
 	p, h1 { @include rem(margin-bottom, 48px); }
 
