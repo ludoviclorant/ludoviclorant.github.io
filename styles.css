@@ -67,6 +67,13 @@ body {
       width: 21px;
       height: 31px; }
 
+header {
+  border-width: 12px;
+  border-width: 0.75rem;
+  border-color: #1E1E1E;
+  border-style: solid;
+  border-bottom: none; }
+
 #top-bar {
   padding: 144px 144px 60px;
   padding: 9rem 9rem 3.75rem; }

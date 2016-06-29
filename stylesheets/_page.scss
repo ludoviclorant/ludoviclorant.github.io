@@ -1,3 +1,12 @@
+header {
+
+	@include rem(border-width, 0.75rem);
+	border-color: $color-bg-dark;
+	border-style: solid;
+	border-bottom: none;
+	
+}
+
 #top-bar {
 
 	@include rem(padding, 144px 144px 60px);
