@@ -11,6 +11,10 @@
 @import "core/base";
 
 @import "sprite";
-@import "page";
+@import "home";
+
+@import "parts/top-bar";
+@import "parts/masthead";
+@import "parts/works";
 
 @import "patterns/box";

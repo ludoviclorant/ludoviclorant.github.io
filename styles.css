@@ -49,16 +49,33 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 100%; }
+  font-size: 100%;
+  background-color: #FFFFFF; }
 
 body {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif; }
 
 .container {
-  margin: 0 24px;
-  margin: 0 1.5rem; }
+  margin: 0 32px;
+  margin: 0 2rem; }
 
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 624px; } }
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 832px; } }
+@media only screen and (min-width: 1366px) {
+  .container {
+    width: 1078px; } }
+@media only screen and (min-width: 1680px) {
+  .container {
+    width: 1392px; } }
+@media only screen and (min-width: 1920px) {
+  .container {
+    width: 1632px; } }
 .s {
   background-repeat: no-repeat;
   display: inline-block;
@@ -71,23 +88,27 @@ body {
       width: 21px;
       height: 31px; }
 
-#home {
-  border-width: 12px;
-  border-width: 0.75rem;
+#home-hero {
+  border-width: 8px;
+  border-width: 0.5rem;
   border-color: #1E1E1E;
   border-style: solid;
   border-bottom: none; }
 
+@media only screen and (min-width: 768px) {
+  #home-hero {
+    border-width: 12px;
+    border-width: 0.75rem; } }
 .top-bar {
-  padding: 144px 144px 60px;
-  padding: 9rem 9rem 3.75rem; }
+  padding: 144px 0 60px;
+  padding: 9rem 0 3.75rem; }
 
 .masthead {
   font-family: 'Oswald', sans-serif;
-  font-size: 120px;
-  font-size: 7.5rem;
-  padding: 0 144px 156px;
-  padding: 0 9rem 9.75rem;
+  font-size: 48px;
+  font-size: 3rem;
+  padding-bottom: 156px;
+  padding-bottom: 9.75rem;
   line-height: 1.2;
   color: #55A9FF;
   text-transform: uppercase;
@@ -97,17 +118,6 @@ body {
     margin-bottom: 3rem; }
   .masthead span {
     color: #F54040; }
-  .masthead a {
-    position: relative;
-    text-decoration: none; }
-    .masthead a:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      height: 16px;
-      height: 1rem;
-      width: 100%;
-      background-color: #55A9FF; }
   .masthead a:link, .masthead a:visited {
     color: #55A9FF; }
   .masthead a:hover, .masthead a:active {
@@ -116,6 +126,18 @@ body {
       background-color: #228fff; }
   .masthead-fixed-bg {
     z-index: -1; }
+  @media only screen and (min-width: 768px) {
+    .masthead {
+      font-size: 64px;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 1024px) {
+    .masthead {
+      font-size: 96px;
+      font-size: 6rem; } }
+  @media only screen and (min-width: 1366px) {
+    .masthead {
+      font-size: 112px;
+      font-size: 7rem; } }
 
 #works {
   background-color: #1E1E1E; }

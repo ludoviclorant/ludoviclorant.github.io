@@ -1,7 +1,12 @@
 //
 // TEXT SIZING
 //
-html { font-size: 100%; }
+html {
+
+	font-size: 100%;
+	background-color: #FFFFFF;
+
+}
 
 body {
 
@@ -15,7 +20,41 @@ body {
 //
 .container {
 
-	@include rem(margin, 0 1.5rem);
+	@include rem(margin, 0 2rem);
 
 }
 
+@media only screen and (min-width : 768px) {
+	
+	.container {
+
+		margin: 0 auto;
+		width: 624px;
+
+	}
+
+}
+
+@media only screen and (min-width : 1024px) {
+
+	.container { width: 832px; }
+
+}
+
+@media only screen and (min-width : 1366px) {
+
+	.container { width: 1078px; }
+
+}
+
+@media only screen and (min-width : 1680px) {
+
+	.container { width: 1392px; }
+
+}
+
+@media only screen and (min-width : 1920px) {
+
+	.container { width: 1632px; }
+
+}
