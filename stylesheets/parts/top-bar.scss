@@ -1,5 +1,18 @@
 .top-bar {
 
-	@include rem(padding, 3rem 0 2rem);
+	@include rem(padding, 2rem 0 2rem);
+
+	@media only screen and (min-width : 768px) {
+
+		@include rem(padding, 3rem 0 2rem);
+
+	}
+
+	@media only screen and (min-width : 1024px) {
+
+		@include rem(padding, 5rem 0 2.5rem);
+
+	}
 
 }
+
