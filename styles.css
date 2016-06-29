@@ -61,20 +61,20 @@ body {
   margin: 0 1rem;
   width: 100%; }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     margin: 0 auto;
     width: 624px; } }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .container {
     width: 704px; } }
-@media only screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {
   .container {
     width: 1174px; } }
-@media only screen and (min-width: 1680px) {
+@media screen and (min-width: 1680px) {
   .container {
     width: 1392px; } }
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
   .container {
     width: 1632px; } }
 .s {
@@ -85,17 +85,17 @@ body {
     width: 22px;
     height: 32px;
     background-position: 0px 0px; }
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .s.logo {
       width: 33px;
       height: 48px;
       background-position: -50px 0px; } }
-  @media only screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .s.logo {
       width: 44px;
       height: 64px;
       background-position: -100px 0px; } }
-  @media only screen and (min-width: 1680px) {
+  @media screen and (min-width: 1680px) {
     .s.logo {
       width: 55px;
       height: 80px;
@@ -108,18 +108,18 @@ body {
   border-style: solid;
   border-bottom: none; }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #home-hero {
     border-width: 12px;
     border-width: 0.75rem; } }
 .top-bar {
   padding: 32px 0 19.2px;
   padding: 2rem 0 1.2rem; }
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .top-bar {
       padding: 80px 0 40px;
       padding: 5rem 0 2.5rem; } }
-  @media only screen and (min-width: 1680px) {
+  @media screen and (min-width: 1680px) {
     .top-bar {
       padding: 144px 0 72px;
       padding: 9rem 0 4.5rem; } }
@@ -145,15 +145,15 @@ body {
     color: #228fff; }
   .masthead-fixed-bg {
     z-index: -1; }
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .masthead {
       font-size: 64px;
       font-size: 4rem; } }
-  @media only screen and (min-width: 1366px) {
+  @media screen and (min-width: 1366px) {
     .masthead {
       font-size: 96px;
       font-size: 6rem; } }
-  @media only screen and (min-width: 1680px) {
+  @media screen and (min-width: 1680px) {
     .masthead {
       font-size: 128px;
       font-size: 8rem; } }

@@ -22,31 +22,31 @@
 
 	}
 
-	@media only screen and (min-width : 768px) {
+	@media screen and (min-width : 768px) {
 	
 		@include rem(font-size, 4rem);
 
 	}
 
-	@media only screen and (min-width : 1024px) {
+	@media screen and (min-width : 1024px) {
 	
 
 
 	}
 
-	@media only screen and (min-width : 1366px) {
+	@media screen and (min-width : 1366px) {
 
 		@include rem(font-size, 6rem);
 
 	}
 
-	@media only screen and (min-width : 1680px) {
+	@media screen and (min-width : 1680px) {
 
 		@include rem(font-size, 8rem);
 
 	}
 
-	@media only screen and (min-width : 1920px) {
+	@media screen and (min-width : 1920px) {
 
 	}
 
