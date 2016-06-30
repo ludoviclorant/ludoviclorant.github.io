@@ -6,7 +6,24 @@
    
 }
 
+.s {
 
+    &.team,
+    &.solo {
+
+        width: 30px;
+        height: 48px;
+
+    }
+
+    &.team { background-position: 0px -80px; }
+    &.solo { background-position: -30px -80px; }
+
+}
+
+//
+// SPECIAL CASE LOGO
+//
 .logo { 
 
 	width: 28px;
@@ -14,6 +31,8 @@
     background-position: 0px 0px;
 
 }
+
+
 
 @media screen and (min-width : 768px) {
 

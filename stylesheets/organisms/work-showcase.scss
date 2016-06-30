@@ -1,7 +1,6 @@
 #work-showcase {//
 
 	background-color: $color-bg-dark;
-	font-size: 0; // removing bottom space
 	font-weight: 300;
 	color: #FFF;
 
@@ -13,7 +12,6 @@
 
 	.date {
 
-		@include rem(font-size, 1rem);
 		line-height: 1;
 		color: $color-brand-blue;
 
@@ -23,7 +21,7 @@
 
 	.project-name {
 
-		@include rem(font-size, 2.25rem);
+		@include rem(font-size, 2rem);
 		
 		font-weight: 400;
 		line-height: 1.2;
@@ -32,9 +30,44 @@
 
 	.description {
 
-		@include rem(font-size, 1rem);
-		@include rem(margin-bottom, 3rem);
+		@include rem(margin-bottom, 2.5rem);
 		line-height: 2;
+
+	}
+
+	.skills {
+
+		display: inline-table;
+		@include rem(margin-bottom, 1rem);
+
+		> div {
+
+			display: table-cell;
+			vertical-align: top;
+
+		}
+
+		.type .s { margin-top: -1px; }
+		
+		.list { display: inline-block; }
+
+		li {
+
+			float: left;
+			@include rem(font-size, 0.875rem);
+			@include rem(padding, 1rem);
+			line-height: 1;
+			border: 1px solid $color-text;
+			white-space: nowrap;
+			margin-top: -1px;
+    		margin-left: -1px;
+
+			&:last-child { @include rem(margin-right, 1.85rem); }
+
+
+		}
+
+		+ .skills { @include rem(margin-bottom, 3rem); }
 
 	}
 
@@ -77,6 +110,12 @@
 	@media screen and (min-width : 1024px) {
 
 		.view { width: 33.334%; }
+
+	}
+
+	@media screen and (min-width : 1366px) {
+
+		.description { @include rem(width, 45rem);  } // legibility
 
 	}
 
