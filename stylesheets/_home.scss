@@ -1,14 +1,20 @@
-#home-hero:before {
+#home-hero {
 
-	@extend %BOX-VIEWPORT;
-	content: '';
-	position: absolute;
-	@include rem(border-width, 0.75rem);
-	border-color: $color-bg-dark;
-	border-style: solid;
-	border-bottom: none;
-	z-index: $z-masthead-border;
-	display: none;
+	position: relative;
+
+	&:before {
+
+		@extend %BOX-VIEWPORT;
+		content: '';
+		position: absolute;
+		@include rem(border-width, 0.75rem);
+		border-color: $color-bg-dark;
+		border-style: solid;
+		border-bottom: none;
+		z-index: $z-masthead-border;
+		display: none;
+
+	}
 
 }
 

@@ -100,16 +100,18 @@ body {
       height: 80px;
       background-position: -150px 0px; } }
 
-#home-hero:before {
-  content: '';
-  position: absolute;
-  border-width: 12px;
-  border-width: 0.75rem;
-  border-color: #1E1E1E;
-  border-style: solid;
-  border-bottom: none;
-  z-index: -10;
-  display: none; }
+#home-hero {
+  position: relative; }
+  #home-hero:before {
+    content: '';
+    position: absolute;
+    border-width: 12px;
+    border-width: 0.75rem;
+    border-color: #1E1E1E;
+    border-style: solid;
+    border-bottom: none;
+    z-index: -10;
+    display: none; }
 
 @media screen and (min-width: 768px) {
   #home-hero:before {
