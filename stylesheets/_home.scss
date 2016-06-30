@@ -1,6 +1,7 @@
 #home-hero {
 
 	position: relative;
+	@include rem(padding, 2rem 0 3.2rem);
 
 	&:before {
 
@@ -20,9 +21,23 @@
 
 @media screen and (min-width : 768px) {
 	
-	#home-hero:before {
+	#home-hero {
 
-		display: block;
+		@include rem(padding, 4rem 0 6.5rem);
+
+		&:before { display: block; }
+
+	}
+
+}
+
+@media screen and (min-width : 1680px) {
+	
+	#home-hero {
+
+		@include rem(padding, 8rem 0 12.9rem);
+
+		&:before { display: block; }
 
 	}
 

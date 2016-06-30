@@ -101,7 +101,9 @@ body {
       background-position: -150px 0px; } }
 
 #home-hero {
-  position: relative; }
+  position: relative;
+  padding: 32px 0 51.2px;
+  padding: 2rem 0 3.2rem; }
   #home-hero:before {
     content: '';
     position: absolute;
@@ -114,26 +116,33 @@ body {
     display: none; }
 
 @media screen and (min-width: 768px) {
-  #home-hero:before {
-    display: block; } }
+  #home-hero {
+    padding: 64px 0 104px;
+    padding: 4rem 0 6.5rem; }
+    #home-hero:before {
+      display: block; } }
+@media screen and (min-width: 1680px) {
+  #home-hero {
+    padding: 128px 0 206.4px;
+    padding: 8rem 0 12.9rem; }
+    #home-hero:before {
+      display: block; } }
 .top-bar {
-  padding: 32px 0 19.2px;
-  padding: 2rem 0 1.2rem; }
+  padding-bottom: 19.2px;
+  padding-bottom: 1.2rem; }
   @media screen and (min-width: 768px) {
     .top-bar {
-      padding: 64px 0 40px;
-      padding: 4rem 0 2.5rem; } }
+      padding-bottom: 40px;
+      padding-bottom: 2.5rem; } }
   @media screen and (min-width: 1680px) {
     .top-bar {
-      padding: 128px 0 78.4px;
-      padding: 8rem 0 4.9rem; } }
+      padding-bottom: 78.4px;
+      padding-bottom: 4.9rem; } }
 
 .masthead {
   font-family: 'Oswald', sans-serif;
   font-size: 56px;
   font-size: 3.5rem;
-  padding-bottom: 156px;
-  padding-bottom: 9.75rem;
   line-height: 1.2;
   color: #55A9FF;
   text-transform: uppercase;
