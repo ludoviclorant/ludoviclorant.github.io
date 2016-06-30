@@ -63,19 +63,19 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     margin: 0 auto;
-    width: 640px; } }
+    width: 636px; } }
 @media screen and (min-width: 1024px) {
   .container {
-    width: 896px; } }
+    width: 900px; } }
 @media screen and (min-width: 1366px) {
   .container {
-    width: 1238px; } }
+    width: 1236px; } }
 @media screen and (min-width: 1680px) {
   .container {
-    width: 1424px; } }
+    width: 1428px; } }
 @media screen and (min-width: 1920px) {
   .container {
-    width: 1664px; } }
+    width: 1668px; } }
 .s, .logo {
   background-repeat: no-repeat;
   display: inline-block;

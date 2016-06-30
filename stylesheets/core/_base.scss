@@ -24,12 +24,14 @@ body {
 
 }
 
-@media screen and (min-width : 768px) { // 64px margins;
+// all container widths are divisible by 12
+
+@media screen and (min-width : 768px) { // +- 64px margins;
 	
 	.container {
 
 		margin: 0 auto;
-		width: 640px;
+		width: 636px;
 
 	}
 
@@ -37,24 +39,24 @@ body {
 
 @media screen and (min-width : 1024px) {
 
-	.container { width: 896px; }
+	.container { width: 900px; }
 
 }
 
 @media screen and (min-width : 1366px) {
 
-	.container { width: 1238px; }
+	.container { width: 1236px; }
 
 }
 
-@media screen and (min-width : 1680px) { // 128px margins
+@media screen and (min-width : 1680px) { // +- 128px margins
 
-	.container { width: 1424px; }
+	.container { width: 1428px; }
 
 }
 
 @media screen and (min-width : 1920px) {
 
-	.container { width: 1664px; }
+	.container { width: 1668px; }
 
 }
