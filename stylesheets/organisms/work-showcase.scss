@@ -1,12 +1,12 @@
 #work-showcase {
 
-	@extend %BOX-CLEARFIX;
 	background-color: $color-bg-dark;
 
-	.work {
+	.views { @extend %BOX-CLEARFIX; }
+
+	.view {
 
 		float: left;
-		background-color: #FF0000;
 
 		> div { 
 
@@ -19,21 +19,21 @@
 
 			}
 
-		}		
+		}
 
-		&:nth-child(even) { background-color: #0000FF; }
+		img { @extend %IMG-FILL; }
 
 	}
 
 	@media screen and (min-width : 768px) {
 
-		.work { width: 50%; }
+		.view { width: 50%; }
 
 	}
 
 	@media screen and (min-width : 1024px) {
 
-		.work { width: 33.334%; }
+		.view { width: 33.334%; }
 
 	}
 

@@ -65,8 +65,8 @@ body {
   @media screen and (min-width: 768px) {
     .container {
       padding: 0;
-      width: 636px;
-      width: 39.75rem; } }
+      width: 600px;
+      width: 37.5rem; } }
   @media screen and (min-width: 1024px) {
     .container {
       width: 900px;
@@ -168,35 +168,36 @@ body {
 
 #work-showcase {
   background-color: #1E1E1E; }
-  #work-showcase .work {
-    float: left;
-    background-color: #FF0000; }
-    #work-showcase .work > div > div {
+  #work-showcase .view {
+    float: left; }
+    #work-showcase .view > div > div {
       position: absolute; }
-    #work-showcase .work:nth-child(even) {
-      background-color: #0000FF; }
   @media screen and (min-width: 768px) {
-    #work-showcase .work {
+    #work-showcase .view {
       width: 50%; } }
   @media screen and (min-width: 1024px) {
-    #work-showcase .work {
+    #work-showcase .view {
       width: 33.334%; } }
 
-#work-showcase:before, #work-showcase:after {
+#work-showcase .views:before, #work-showcase .views:after {
   content: " ";
   display: table; }
-#work-showcase:after {
+#work-showcase .views:after {
   clear: both; }
 
-#hero-index:before, #hero-index .masthead-fixed-bg, #work-showcase .work > div > div {
+#hero-index:before, #hero-index .masthead-fixed-bg, #work-showcase .view > div > div {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
 
-#work-showcase .work > div {
+#work-showcase .view > div {
   position: relative;
   width: 100%;
   padding-bottom: 100%; }
+
+#work-showcase .view img {
+  width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=styles.css.map */

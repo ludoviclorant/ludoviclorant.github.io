@@ -25,11 +25,11 @@ body {
 	@include rem(padding, 0 2rem);
 
 	// 728+
-	// divided by 2 : 318px;
+	// divided by 2 : 300px;
 	@media screen and (min-width : 768px) {
 	
 		padding: 0;
-		@include rem(width, 636px);
+		@include rem(width, 600px);
 
 	}
 
