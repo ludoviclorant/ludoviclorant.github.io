@@ -5,7 +5,7 @@
 
 	&:before {
 
-		@extend %BOX-VIEWPORT;
+		@extend %BOX-FILL;
 		content: '';
 		position: absolute;
 		@include rem(border-width, 0.75rem);
@@ -37,7 +37,7 @@
 
 		&-fixed-bg {
 
-			@extend %BOX-VIEWPORT;
+			@extend %BOX-FILL;
 			position: fixed;
 			z-index: $z-masthead-fixed-bg;
 

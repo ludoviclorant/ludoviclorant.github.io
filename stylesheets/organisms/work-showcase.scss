@@ -1,5 +1,40 @@
 #work-showcase {
 
+	@extend %BOX-CLEARFIX;
 	background-color: $color-bg-dark;
+
+	.work {
+
+		float: left;
+		background-color: #FF0000;
+
+		> div { 
+
+			@extend %BOX-RATIO-1-1;
+
+			> div { 
+
+				@extend %BOX-FILL;
+				position: absolute;
+
+			}
+
+		}		
+
+		&:nth-child(even) { background-color: #0000FF; }
+
+	}
+
+	@media screen and (min-width : 768px) {
+
+		.work { width: 50%; }
+
+	}
+
+	@media screen and (min-width : 1024px) {
+
+		.work { width: 33.334%; }
+
+	}
 
 }
