@@ -1,0 +1,72 @@
+#hero-index {
+
+	position: relative;
+	@include rem(padding, 2rem 0 3.2rem);
+
+	&:before {
+
+		@extend %BOX-VIEWPORT;
+		content: '';
+		position: absolute;
+		@include rem(border-width, 0.75rem);
+		border-color: $color-bg-dark;
+		border-style: solid;
+		border-bottom: none;
+		z-index: $z-masthead-border;
+		display: none;
+
+	}
+
+	.logo { @include rem(margin-bottom, 0.9rem); }
+
+	.masthead {
+
+		font-family: 'Oswald', sans-serif;
+		@include rem(font-size, 3.5rem);
+		line-height: 1.2;
+		color: $color-brand-blue;
+		text-transform: uppercase;
+		mix-blend-mode: multiply;
+
+		p, h1 { @include rem(margin-bottom, 48px); }
+
+		span { color: $color-brand-red; }
+
+		a:link, a:visited { color: $color-brand-blue; }
+		a:hover, a:active { color: darken($color-brand-blue, 10%); }
+
+		&-fixed-bg {
+
+			@extend %BOX-VIEWPORT;
+			position: fixed;
+			z-index: $z-masthead-fixed-bg;
+
+		}
+
+	}
+
+	@media screen and (min-width : 768px) {
+	
+		@include rem(padding, 4rem 0 6.5rem);
+
+		&:before { display: block; }
+
+		.logo { @include rem(margin-bottom, 2rem); }
+
+		.masthead { @include rem(font-size, 5rem); }
+
+	}
+
+	@media screen and (min-width : 1680px) {
+	
+		@include rem(padding, 8rem 0 12.9rem);
+
+		&:before { display: block; }
+
+		.logo { @include rem(margin-bottom, 4.2rem); }
+
+		.masthead { @include rem(font-size, 7rem); }
+
+	}
+
+}

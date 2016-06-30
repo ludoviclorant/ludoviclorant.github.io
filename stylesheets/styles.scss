@@ -11,10 +11,8 @@
 @import "core/base";
 
 @import "sprite";
-@import "home";
 
-@import "parts/top-bar";
-@import "parts/masthead";
-@import "parts/works";
+@import "organisms/hero-index";
+@import "organisms/works";
 
 @import "patterns/box";
