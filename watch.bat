@@ -1,2 +1,2 @@
 cd C:\ludoviclorant.github.io
-sass --watch stylesheets/styles.scss:styles.css
+sass --watch stylesheets/styles.scss:styles.css --style compressed
