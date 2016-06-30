@@ -28,21 +28,9 @@
 
 	}
 
-	@media screen and (min-width : 1366px) {
-
-		@include rem(font-size, 6rem);
-
-	}
-
 	@media screen and (min-width : 1680px) {
 
 		@include rem(font-size, 7rem);
-
-	}
-
-	@media screen and (min-width : 1920px) {
-
-		@include rem(font-size, 8rem);
 
 	}
 

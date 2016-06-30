@@ -114,31 +114,28 @@ body {
     border-bottom: none;
     z-index: -10;
     display: none; }
+  #home-hero .logo {
+    margin-bottom: 19.2px;
+    margin-bottom: 1.2rem; }
 
 @media screen and (min-width: 768px) {
   #home-hero {
     padding: 64px 0 104px;
     padding: 4rem 0 6.5rem; }
     #home-hero:before {
-      display: block; } }
+      display: block; }
+    #home-hero .logo {
+      margin-bottom: 40px;
+      margin-bottom: 2.5rem; } }
 @media screen and (min-width: 1680px) {
   #home-hero {
     padding: 128px 0 206.4px;
     padding: 8rem 0 12.9rem; }
     #home-hero:before {
-      display: block; } }
-.top-bar {
-  padding-bottom: 19.2px;
-  padding-bottom: 1.2rem; }
-  @media screen and (min-width: 768px) {
-    .top-bar {
-      padding-bottom: 40px;
-      padding-bottom: 2.5rem; } }
-  @media screen and (min-width: 1680px) {
-    .top-bar {
-      padding-bottom: 78.4px;
-      padding-bottom: 4.9rem; } }
-
+      display: block; }
+    #home-hero .logo {
+      margin-bottom: 78.4px;
+      margin-bottom: 4.9rem; } }
 .masthead {
   font-family: 'Oswald', sans-serif;
   font-size: 56px;
@@ -163,18 +160,10 @@ body {
     .masthead {
       font-size: 80px;
       font-size: 5rem; } }
-  @media screen and (min-width: 1366px) {
-    .masthead {
-      font-size: 96px;
-      font-size: 6rem; } }
   @media screen and (min-width: 1680px) {
     .masthead {
       font-size: 112px;
       font-size: 7rem; } }
-  @media screen and (min-width: 1920px) {
-    .masthead {
-      font-size: 128px;
-      font-size: 8rem; } }
 
 #works {
   background-color: #1E1E1E; }
