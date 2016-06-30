@@ -24,12 +24,12 @@ body {
 
 }
 
-@media screen and (min-width : 768px) {
+@media screen and (min-width : 768px) { // 64px margins;
 	
 	.container {
 
 		margin: 0 auto;
-		width: 624px;
+		width: 640px;
 
 	}
 
@@ -37,24 +37,24 @@ body {
 
 @media screen and (min-width : 1024px) {
 
-	.container { width: 704px; }
+	.container { width: 896px; }
 
 }
 
 @media screen and (min-width : 1366px) {
 
-	.container { width: 1174px; }
+	.container { width: 1238px; }
 
 }
 
-@media screen and (min-width : 1680px) {
+@media screen and (min-width : 1680px) { // 128px margins
 
-	.container { width: 1392px; }
+	.container { width: 1424px; }
 
 }
 
 @media screen and (min-width : 1920px) {
 
-	.container { width: 1632px; }
+	.container { width: 1664px; }
 
 }

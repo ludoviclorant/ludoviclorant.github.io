@@ -63,19 +63,19 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     margin: 0 auto;
-    width: 624px; } }
+    width: 640px; } }
 @media screen and (min-width: 1024px) {
   .container {
-    width: 704px; } }
+    width: 896px; } }
 @media screen and (min-width: 1366px) {
   .container {
-    width: 1174px; } }
+    width: 1238px; } }
 @media screen and (min-width: 1680px) {
   .container {
-    width: 1392px; } }
+    width: 1424px; } }
 @media screen and (min-width: 1920px) {
   .container {
-    width: 1632px; } }
+    width: 1664px; } }
 .s {
   background-repeat: no-repeat;
   display: inline-block;
@@ -119,17 +119,17 @@ body {
   padding: 2rem 0 1.2rem; }
   @media screen and (min-width: 768px) {
     .top-bar {
-      padding: 80px 0 40px;
-      padding: 5rem 0 2.5rem; } }
+      padding: 64px 0 40px;
+      padding: 4rem 0 2.5rem; } }
   @media screen and (min-width: 1680px) {
     .top-bar {
-      padding: 144px 0 72px;
-      padding: 9rem 0 4.5rem; } }
+      padding: 128px 0 78.4px;
+      padding: 8rem 0 4.9rem; } }
 
 .masthead {
   font-family: 'Oswald', sans-serif;
-  font-size: 48px;
-  font-size: 3rem;
+  font-size: 56px;
+  font-size: 3.5rem;
   padding-bottom: 156px;
   padding-bottom: 9.75rem;
   line-height: 1.2;
@@ -150,13 +150,17 @@ body {
     z-index: -20; }
   @media screen and (min-width: 768px) {
     .masthead {
-      font-size: 64px;
-      font-size: 4rem; } }
+      font-size: 80px;
+      font-size: 5rem; } }
   @media screen and (min-width: 1366px) {
     .masthead {
       font-size: 96px;
       font-size: 6rem; } }
   @media screen and (min-width: 1680px) {
+    .masthead {
+      font-size: 112px;
+      font-size: 7rem; } }
+  @media screen and (min-width: 1920px) {
     .masthead {
       font-size: 128px;
       font-size: 8rem; } }
