@@ -1,34 +1,23 @@
-#home-hero {
+#home-hero:before {
 
-	&:before {
-
-		@extend %BOX-VIEWPORT;
-		content: '';
-		position: absolute;
-		@include rem(border-width, 0.5rem);
-		border-color: $color-bg-dark;
-		border-style: solid;
-		border-bottom: none;
-		z-index: $z-masthead-border;
-
-	}
+	@extend %BOX-VIEWPORT;
+	content: '';
+	position: absolute;
+	@include rem(border-width, 0.75rem);
+	border-color: $color-bg-dark;
+	border-style: solid;
+	border-bottom: none;
+	z-index: $z-masthead-border;
+	display: none;
 
 }
 
-@media (min-width : 768px) {
+@media screen and (min-width : 768px) {
 	
-	#home-hero {
-		
-		@include rem(border-width, 0.75rem);
+	#home-hero:before {
+
+		display: block;
 
 	}
-
-}
-
-@media (min-width : 1024px) {
-
-}
-
-@media (min-width : 1366px) {
 
 }
