@@ -19,7 +19,7 @@ body {
 //
 // GRID ELEMENTS
 //
-.container { // all container widths are divisible by 12
+.container { // all container px widths are divisible by 12
 
 	margin: 0 auto;
 	@include rem(padding, 0 2rem);
@@ -27,16 +27,16 @@ body {
 	@media screen and (min-width : 768px) {
 	
 		padding: 0;
-		width: 636px;
+		@include rem(width, 636px);
 
 	}
 
-	@media screen and (min-width : 1024px) { width: 900px; }
+	@media screen and (min-width : 1024px) { @include rem(width, 900px); }
 
-	@media screen and (min-width : 1366px) { width: 1236px; }
+	@media screen and (min-width : 1366px) { @include rem(width, 1236px); }
 
-	@media screen and (min-width : 1680px) { width: 1428px; }
+	@media screen and (min-width : 1680px) { @include rem(width, 1428px); }
 
-	@media screen and (min-width : 1920px) { width: 1668px; }
+	@media screen and (min-width : 1920px) { @include rem(width, 1668px); }
 
 }
