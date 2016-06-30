@@ -143,8 +143,8 @@ body {
       z-index: -20; }
   @media screen and (min-width: 768px) {
     #hero-index {
-      padding: 64px 0 104px;
-      padding: 4rem 0 6.5rem; }
+      padding: 64px 0 56px;
+      padding: 4rem 0 3.5rem; }
       #hero-index:before {
         display: block; }
       #hero-index .logo {
@@ -155,8 +155,8 @@ body {
         font-size: 5rem; } }
   @media screen and (min-width: 1680px) {
     #hero-index {
-      padding: 128px 0 206.4px;
-      padding: 8rem 0 12.9rem; }
+      padding: 128px 0 158.4px;
+      padding: 8rem 0 9.9rem; }
       #hero-index:before {
         display: block; }
       #hero-index .logo {

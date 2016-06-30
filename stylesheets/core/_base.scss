@@ -24,6 +24,8 @@ body {
 	margin: 0 auto;
 	@include rem(padding, 0 2rem);
 
+	// 728+
+	// divided by 2 : 318px;
 	@media screen and (min-width : 768px) {
 	
 		padding: 0;
@@ -31,12 +33,20 @@ body {
 
 	}
 
+	// 1024+
+	// divided by 3 : 300px;
 	@media screen and (min-width : 1024px) { @include rem(width, 900px); }
 
+	// 1366+
+	// divided by 3 : 412px;
 	@media screen and (min-width : 1366px) { @include rem(width, 1236px); }
 
+	// 1680+
+	// divided by 3 : 476px;
 	@media screen and (min-width : 1680px) { @include rem(width, 1428px); }
 
+	// 1920+
+	// divided by 3 : 556px;
 	@media screen and (min-width : 1920px) { @include rem(width, 1668px); }
 
 }

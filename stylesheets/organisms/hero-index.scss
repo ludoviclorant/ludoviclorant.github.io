@@ -28,7 +28,7 @@
 		text-transform: uppercase;
 		mix-blend-mode: multiply;
 
-		p, h1 { @include rem(margin-bottom, 48px); }
+		p, h1 { @include rem(margin-bottom, 3rem); }
 
 		span { color: $color-brand-red; }
 
@@ -47,7 +47,7 @@
 
 	@media screen and (min-width : 768px) {
 	
-		@include rem(padding, 4rem 0 6.5rem);
+		@include rem(padding, 4rem 0 3.5rem);
 
 		&:before { display: block; }
 
@@ -59,7 +59,7 @@
 
 	@media screen and (min-width : 1680px) {
 	
-		@include rem(padding, 8rem 0 12.9rem);
+		@include rem(padding, 8rem 0 9.9rem);
 
 		&:before { display: block; }
 
