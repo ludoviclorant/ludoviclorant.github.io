@@ -54,28 +54,31 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  min-width: 320px;
+  min-width: 20rem; }
 
 .container {
-  margin: 0 16px;
-  margin: 0 1rem; }
+  margin: 0 auto;
+  padding: 0 32px;
+  padding: 0 2rem; }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0;
+      width: 636px; } }
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 900px; } }
+  @media screen and (min-width: 1366px) {
+    .container {
+      width: 1236px; } }
+  @media screen and (min-width: 1680px) {
+    .container {
+      width: 1428px; } }
+  @media screen and (min-width: 1920px) {
+    .container {
+      width: 1668px; } }
 
-@media screen and (min-width: 768px) {
-  .container {
-    margin: 0 auto;
-    width: 636px; } }
-@media screen and (min-width: 1024px) {
-  .container {
-    width: 900px; } }
-@media screen and (min-width: 1366px) {
-  .container {
-    width: 1236px; } }
-@media screen and (min-width: 1680px) {
-  .container {
-    width: 1428px; } }
-@media screen and (min-width: 1920px) {
-  .container {
-    width: 1668px; } }
 .s, .logo {
   background-repeat: no-repeat;
   display: inline-block;

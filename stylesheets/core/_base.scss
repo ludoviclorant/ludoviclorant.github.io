@@ -12,51 +12,31 @@ body {
 
 	font-size: 1rem;
 	font-family: 'Roboto', sans-serif;
+	@include rem(min-width, 320px);
 
 }
 
 //
 // GRID ELEMENTS
 //
-.container {
+.container { // all container widths are divisible by 12
 
-	@include rem(margin, 0 16px);
+	margin: 0 auto;
+	@include rem(padding, 0 2rem);
 
-}
-
-// all container widths are divisible by 12
-
-@media screen and (min-width : 768px) { // +- 64px margins;
+	@media screen and (min-width : 768px) {
 	
-	.container {
-
-		margin: 0 auto;
+		padding: 0;
 		width: 636px;
 
 	}
 
-}
+	@media screen and (min-width : 1024px) { width: 900px; }
 
-@media screen and (min-width : 1024px) {
+	@media screen and (min-width : 1366px) { width: 1236px; }
 
-	.container { width: 900px; }
+	@media screen and (min-width : 1680px) { width: 1428px; }
 
-}
-
-@media screen and (min-width : 1366px) {
-
-	.container { width: 1236px; }
-
-}
-
-@media screen and (min-width : 1680px) { // +- 128px margins
-
-	.container { width: 1428px; }
-
-}
-
-@media screen and (min-width : 1920px) {
-
-	.container { width: 1668px; }
+	@media screen and (min-width : 1920px) { width: 1668px; }
 
 }
