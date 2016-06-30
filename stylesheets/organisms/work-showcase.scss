@@ -1,6 +1,7 @@
 #work-showcase {//
 
 	background-color: $color-bg-dark;
+	font-size: 0; // removing bottom space
 
 	.views { @extend %BOX-CLEARFIX; }
 
@@ -22,7 +23,13 @@
 
 		}
 
-		img { @extend %IMG-FILL; }
+		img { 
+
+			@extend %IMG-FILL;
+
+			&.crisp { @extend %IMG-CRISP-SCALING; }
+
+		}
 
 	}
 
