@@ -17,8 +17,9 @@
 
 	&-fixed-bg {
 
-		@extend %BOX-FIXED-VIEWPORT;
-		z-index: -1;
+		@extend %BOX-VIEWPORT;
+		position: fixed;
+		z-index: $z-masthead-fixed-bg;
 
 	}
 

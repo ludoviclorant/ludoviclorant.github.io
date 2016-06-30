@@ -58,8 +58,7 @@ body {
 
 .container {
   margin: 0 16px;
-  margin: 0 1rem;
-  width: 100%; }
+  margin: 0 1rem; }
 
 @media screen and (min-width: 768px) {
   .container {
@@ -101,14 +100,17 @@ body {
       height: 80px;
       background-position: -150px 0px; } }
 
-#home-hero {
+#home-hero:before {
+  content: '';
+  position: absolute;
   border-width: 8px;
   border-width: 0.5rem;
   border-color: #1E1E1E;
   border-style: solid;
-  border-bottom: none; }
+  border-bottom: none;
+  z-index: -10; }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   #home-hero {
     border-width: 12px;
     border-width: 0.75rem; } }
@@ -144,7 +146,8 @@ body {
   .masthead a:hover, .masthead a:active {
     color: #228fff; }
   .masthead-fixed-bg {
-    z-index: -1; }
+    position: fixed;
+    z-index: -20; }
   @media screen and (min-width: 768px) {
     .masthead {
       font-size: 64px;
@@ -161,8 +164,7 @@ body {
 #works {
   background-color: #1E1E1E; }
 
-.masthead-fixed-bg {
-  position: fixed;
+#home-hero:before, .masthead-fixed-bg {
   top: 0;
   left: 0;
   width: 100%;
