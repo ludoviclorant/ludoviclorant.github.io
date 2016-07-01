@@ -67,7 +67,7 @@
 
 		}
 
-		+ .skills { @include rem(margin-bottom, 3rem); }
+		&:last-of-type { @include rem(margin-bottom, 3rem); }
 
 	}
 
