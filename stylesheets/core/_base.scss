@@ -22,7 +22,7 @@ body {
 .container { // all container px widths are divisible by 12
 
 	margin: 0 auto;
-	@include rem(padding, 0 2rem);
+	@include rem(padding, 0 1.875rem);
 
 	// 728+
 	// divided by 2 : 300px;
