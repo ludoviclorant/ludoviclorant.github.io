@@ -17,14 +17,14 @@
 		font-weight: 100;
 		text-transform: uppercase;
 		line-height: 1;
-		color: $color-text;
+		color: #FFFFFF;
 
 		&:before {
 
 			@extend %BOX-BOTTOM;
 			position: absolute;
 			content: '';
-			border: 1px solid $color-text;
+			border: 1px solid #FFFFFF;
 			border-left: none;
 			border-right: none;
 			@include rem(height, 0.375rem);
