@@ -1,22 +1,39 @@
 #work-showcase {//
 
+	@include rem(padding, 6rem 0);
 	background-color: $color-bg-dark;
 	font-weight: 300;
 	color: #FFF;
 
+	.heading { text-align: center; }
+	
 	h1 {
 
+		position: relative;
+		display: inline-block;
 		text-align: center;
 		@include rem(font-size, 3rem);
+		@include rem(padding-bottom, 1rem);
 		font-weight: 100;
 		text-transform: uppercase;
-		line-height: 1.2;
+		line-height: 1;
 		color: $color-text;
+
+		&:before {
+
+			@extend %BOX-BOTTOM;
+			position: absolute;
+			content: '';
+			border: 1px solid $color-text;
+			border-left: none;
+			border-right: none;
+			@include rem(height, 0.375rem);
+
+		}
 
 	}
 
-	&,
-	.work { @include rem(padding, 5rem 0); }
+	.work { @include rem(padding, 4rem 0); }
 
 	.date,
 	.project-name { @include rem(margin-bottom, 1rem); }
