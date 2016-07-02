@@ -17,7 +17,13 @@
 
 	}
 
-	.logo { @include rem(margin-bottom, 0.9rem); }
+	.logo {
+
+		@include rem(margin-bottom, 1rem);
+		width: 2.389rem;
+		height: 3.5rem;
+
+	}
 
 	.masthead {
 
@@ -47,11 +53,17 @@
 
 	@media screen and (min-width : 768px) {
 	
-		@include rem(padding, 4rem 0 3.5rem);
+		@include rem(padding, 3.333rem 0 3.5rem);
 
 		&:before { display: block; }
 
-		.logo { @include rem(margin-bottom, 2rem); }
+		.logo { 
+
+			@include rem(margin-bottom, 1.667rem);
+			width: 3.413rem;
+			height: 5rem;
+
+		}
 
 		.masthead { @include rem(font-size, 5rem); }
 
@@ -59,11 +71,17 @@
 
 	@media screen and (min-width : 1680px) {
 	
-		@include rem(padding, 8rem 0 9.9rem);
+		@include rem(padding, 4.667rem 0 9.9rem);
 
 		&:before { display: block; }
 
-		.logo { @include rem(margin-bottom, 4.2rem); }
+		.logo { 
+
+			@include rem(margin-bottom, 2.333rem);
+			width: 4.777rem;
+			height: 7rem;
+
+		}
 
 		.masthead { @include rem(font-size, 7rem); }
 
