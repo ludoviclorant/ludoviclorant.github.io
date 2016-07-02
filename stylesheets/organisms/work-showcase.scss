@@ -4,8 +4,19 @@
 	font-weight: 300;
 	color: #FFF;
 
+	h1 {
+
+		text-align: center;
+		@include rem(font-size, 3rem);
+		font-weight: 100;
+		text-transform: uppercase;
+		line-height: 1.2;
+		color: $color-text;
+
+	}
+
 	&,
-	.work { @include rem(padding, 4rem 0); }
+	.work { @include rem(padding, 5rem 0); }
 
 	.date,
 	.project-name { @include rem(margin-bottom, 1rem); }
