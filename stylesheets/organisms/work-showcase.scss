@@ -1,9 +1,9 @@
-#work-showcase {//
+#work-showcase {
 
 	@include rem(padding, 6rem 0);
 	background-color: $color-bg-dark;
 	font-weight: 300;
-	color: #FFF;
+	color: #FFFFFF;
 
 	.heading { text-align: center; }
 	
@@ -17,14 +17,14 @@
 		font-weight: 100;
 		text-transform: uppercase;
 		line-height: 1;
-		color: #FFFFFF;
+		color: $color-text-light;
 
 		&:before {
 
 			@extend %BOX-BOTTOM;
 			position: absolute;
 			content: '';
-			border: 1px solid #FFFFFF;
+			border: 1px solid $color-text-light;
 			border-left: none;
 			border-right: none;
 			@include rem(height, 0.375rem);
