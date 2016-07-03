@@ -9,6 +9,8 @@
 	height: 40px;
 	background-color: $color-bg-dark;
 	z-index: $z-button-menu;
+	
+	&:active { background-color: $color-bg-dark; }
 
 }
 
