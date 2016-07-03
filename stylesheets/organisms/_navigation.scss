@@ -1,40 +1,97 @@
-#menu-button {
+.menu-button {
 
-	background-color: $color-bg-dark;
-	@include rem(width, 40px);
-	@include rem(height, 40px);
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: $z-menu-button;
-	
-	&:before,
-	&:after {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 96px;
+	height: 96px;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+	background-color: #ff3264;
 
-		content: '';
+  	span {
+
+  		display: block;
 		position: absolute;
-		@include rem(width, 16px);
-		@include rem(height, 2px);
-		@include rem(left, 12px);
-		background-color: #FFFFFF;
+		top: 44px;
+		left: 18px;
+		right: 18px;
+		height: 8px;
+		background: white;
+		transition: background 0s 0.3s;
+  		background: none;
 
-		transition: all .15s linear;
+		&:before,
+		&:after {
 
-	}
+			position: absolute;
+			display: block;
+			left: 0;
+			width: 100%;
+			height: 8px;
+			background-color: #fff;
+			content: "";
+			transition-duration: 0.3s, 0.3s;
+  			transition-delay: 0.3s, 0s;
 
-	&:before { @include rem(top, 16px); }
-	&:after { @include rem(top, 22px); }
+		}
 
-	&.is-morphed {
-	
-		&:before { @include rem(top, 18px); }
-		&:after { @include rem(top, 20px); }
-	
-	}
+		&:before {
+
+			top: -20px;
+			transition-property: top, transform;
+
+		}
+
+		&:after {
+
+			bottom: -20px;
+			transition-property: bottom, transform;
+
+		}
+
+  	}
+
+  	&.is-active {
+
+		background-color: #cb0032;
+
+		span {
+
+			&:before {
+
+				top: 0;
+  				transform: rotate(45deg);
+
+			}
+
+			&:after {
+
+				bottom: 0;
+				transform: rotate(-45deg);
+
+			}
+
+			&:before,
+			&:after { transition-delay: 0s, 0.3s; }
+
+		}
+
+  	}
+
+  	&:focus { outline: none; }
 
 }
 
-#menu-overlay {
+.menu-overlay {
 
 	@extend %BOX-FILL;
 	position: fixed;
