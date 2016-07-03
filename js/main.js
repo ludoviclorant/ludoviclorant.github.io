@@ -3,6 +3,7 @@ $(function() {
     var buttonMenu = $('.button-menu');
 	var overlayMenu = $('.menu-overlay');
     var buttonTop = $('.button-top');
+    var rootHtml = $('html');
 
     $(window).on('scroll', function(){
 
@@ -22,6 +23,7 @@ $(function() {
 
 		$(this).toggleClass('is-morphed');
 		overlayMenu.toggleClass('is-opened');
+		rootHtml.toggleClass('no-scroll');
 
 	});
 

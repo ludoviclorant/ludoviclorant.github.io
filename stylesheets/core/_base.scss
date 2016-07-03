@@ -6,6 +6,8 @@ html {
 	font-size: 100%;
 	background-color: #FFFFFF;
 
+	&.no-scroll { overflow: hidden; }
+
 }
 
 body {
