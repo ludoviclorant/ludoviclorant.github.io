@@ -118,7 +118,7 @@
 
 		a {
 
-			@include rem(font-size, 48px);
+			@include rem(font-size, 32px);
 			position: relative;
 			line-height: 1.7;
 			text-transform: uppercase;
@@ -160,6 +160,12 @@
 		visibility: visible;
 		opacity: .99;
 	
+	}
+
+	@media screen and (min-width : 768px) {
+
+		nav a { @include rem(font-size, 48px); }
+
 	}
 
 }
