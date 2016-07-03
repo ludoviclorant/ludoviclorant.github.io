@@ -108,9 +108,6 @@
 			margin-top: -1px;
     		margin-left: -1px;
 
-			&:last-child { @include rem(margin-right, 32px); }
-
-
 		}
 
 		&:last-of-type { @include rem(margin-bottom, 48px); }
@@ -158,6 +155,8 @@
 			margin-bottom: 0;
 
 		}
+
+		.skills li:last-child { @include rem(margin-right, 32px); }
 
 	}
 
