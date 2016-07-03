@@ -11,8 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald|Roboto:400,300,100">
 	<link rel="stylesheet" type="text/css" href="styles.css?v=2" />
 
-	<script src="js/main.js"></script>
+	<script>document.createElement("picture");</script>
 	<script src="js/picturefill.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
 </head>
 <body>
@@ -53,8 +54,6 @@
 		</symbol>
 
 	</svg>
-
-	<button id="menu-button"></button>
 
 	<header id="hero-index">
 
@@ -440,7 +439,23 @@
 
 		</div>
 
+		<button id="menu-button"></button>
+		<div id="menu-overlay" class="is-closed"></button>
+
 	</section>
+
+	<script type="text/javascript">
+	function downloadJSAtOnload() {
+	var element = document.createElement("script");
+	element.src = "js/main.js";
+	document.body.appendChild(element);
+	}
+	if (window.addEventListener)
+	window.addEventListener("load", downloadJSAtOnload, false);
+	else if (window.attachEvent)
+	window.attachEvent("onload", downloadJSAtOnload);
+	else window.onload = downloadJSAtOnload;
+	</script>
 
 </body>
 </html>

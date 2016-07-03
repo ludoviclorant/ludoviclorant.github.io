@@ -7,7 +7,7 @@
 	top: 0;
 	right: 0;
 	z-index: $z-menu-button;
-
+	
 	&:before,
 	&:after {
 
@@ -18,9 +18,38 @@
 		@include rem(left, 12px);
 		background-color: #FFFFFF;
 
+		transition: all .15s linear;
+
 	}
 
 	&:before { @include rem(top, 16px); }
 	&:after { @include rem(top, 22px); }
+
+	&.is-morphed {
+	
+		&:before { @include rem(top, 18px); }
+		&:after { @include rem(top, 20px); }
+	
+	}
+
+}
+
+#menu-overlay {
+
+	@extend %BOX-FILL;
+	position: fixed;
+	z-index: $z-menu-overlay;
+	opacity: 0;
+	visibility: hidden;
+	background-color: $color-bg-dark;
+	transition: all .15s linear;
+
+	
+	&.is-opened {
+	
+		visibility: visible;
+		opacity: .99;
+	
+	}
 
 }
