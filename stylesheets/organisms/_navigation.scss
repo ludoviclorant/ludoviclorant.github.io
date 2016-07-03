@@ -9,7 +9,7 @@
 	height: 40px;
 	background-color: $color-bg-dark;
 	z-index: $z-button-menu;
-	
+
 	&:active { background-color: $color-bg-dark; }
 
 }
@@ -107,7 +107,53 @@
 	visibility: hidden;
 	background-color: $color-bg-dark;
 	transition: all .15s linear;
+	display: table;
 
+	nav {
+
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		@include rem(padding, 30px);
+
+		a {
+
+			@include rem(font-size, 48px);
+			position: relative;
+			line-height: 1.7;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 100;
+			transition: color .3s linear;
+
+			&:before {
+
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 1px;
+				background-color: darken(#FFFFFF, 50%);
+				width: 100%;
+				transition: background-color .3s linear;
+
+			}
+
+			&:link,
+			&:visited { color: darken(#FFFFFF, 50%); }
+			&:hover,
+			&:active { 
+
+				color: #FFFFFF;
+
+				&:before { background-color: #FFFFFF; }
+
+			}
+
+		}
+
+	}
 	
 	&.is-opened {
 	
