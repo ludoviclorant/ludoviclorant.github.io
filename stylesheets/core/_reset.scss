@@ -50,3 +50,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+//
+// LL reset
+//
+button {
+
+	-webkit-appearance: none;
+   	-moz-appearance:    none;
+   	appearance:         none;
+   	padding: 0;
+   	border: 0;
+   	outline: none;
+
+   	&:hover { cursor: pointer; }
+
+}

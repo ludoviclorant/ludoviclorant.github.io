@@ -9,7 +9,7 @@
 		@extend %BOX-FILL;
 		content: '';
 		position: absolute;
-		@include rem(border-width, 12px);
+		@include rem(border-width, 8px);
 		border-color: $color-bg-dark;
 		border-style: solid;
 		border-bottom: none;
