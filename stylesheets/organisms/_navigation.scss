@@ -108,6 +108,7 @@
 	background-color: $color-bg-dark;
 	transition: all .15s linear;
 	display: table;
+	overflow-y: scroll;
 
 	nav {
 

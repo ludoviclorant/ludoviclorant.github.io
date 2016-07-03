@@ -3,7 +3,9 @@ $(function() {
     var buttonMenu = $('.button-menu');
 	var overlayMenu = $('.menu-overlay');
     var buttonTop = $('.button-top');
-    var rootHtml = $('html');
+
+    var html = $('html');
+    var body = $('body');
 
     $(window).on('scroll', function(){
 
@@ -19,17 +21,40 @@ $(function() {
 
 	});
 
+	var overlayCount = 0;
+	var scrollPos = 0;
+
+	function menuClassToggles() {
+
+		buttonMenu.toggleClass('is-morphed');
+		overlayMenu.toggleClass('is-opened');
+		html.toggleClass('no-scroll');
+
+	}
+
 	buttonMenu.on('click', function() {
 
-		$(this).toggleClass('is-morphed');
-		overlayMenu.toggleClass('is-opened');
-		rootHtml.toggleClass('no-scroll');
+		overlayCount++;
+
+		if(overlayCount % 2 !== 0) { //opened
+
+			scrollPos = body.scrollTop();
+			menuClassToggles();
+			html.css('top', '-'+scrollPos+'px');
+
+		}else{
+
+			menuClassToggles();
+			body.scrollTop(scrollPos);
+			html.css('top', '0');
+
+		}
 
 	});
 
 	buttonTop.on('click', function() {
 
-		$('html, body').animate({scrollTop : 0}, 500);
+		body.animate({scrollTop : 0}, 500);
 
 	});
 

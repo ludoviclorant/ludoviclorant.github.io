@@ -5,8 +5,14 @@ html {
 
 	font-size: 100%;
 	background-color: #FFFFFF;
+	width: 100%;
 
-	&.no-scroll { overflow: hidden; }
+	&.no-scroll { // needs js
+
+		overflow-y: scroll;
+		position: fixed;
+
+	}
 
 }
 
