@@ -1,17 +1,23 @@
-.menu-button {
+.button-menu,
+.button-top {
 
 	display: block;
 	position: fixed;
 	overflow: hidden;
-	top: 0;
 	right: 0;
 	width: 40px;
 	height: 40px;
-	font-size: 0;
-	text-indent: -9999px;
 	background-color: $color-bg-dark;
 	z-index: $z-menu-button;
 
+}
+
+.button-menu {
+
+	top: 0;
+	font-size: 0;
+	text-indent: -9999px;
+	
   	span {
 
   		display: block;
@@ -55,7 +61,7 @@
 
   	}
 
-  	&.is-active {
+  	&.is-morphed {
 
 		span {
 
@@ -79,6 +85,13 @@
 		}
 
   	}
+
+}
+
+.button-top {
+
+	bottom: 0;
+	display: none;
 
 }
 

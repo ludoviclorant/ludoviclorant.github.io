@@ -22,11 +22,9 @@
 	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;">
   
   		<symbol id="logo-symbol" viewBox="0 0 33 48">
-
 			<path d="M32.72,16.36L16.36,0L0,16.36L7.64,24L0,31.64L16.36,48l16.36-16.36L25.08,24L32.72,16.36z M30.56,31.64L16.36,45.839
 	L2.161,31.64l15.28-15.28l-1.08-1.08l-7.64,7.64l-6.56-6.56L16.36,2.161L30.56,16.36L15.28,31.64l1.08,1.08L24,25.08L30.56,31.64z"
 	/>
-
 		</symbol>
 
 	</svg>
@@ -34,14 +32,12 @@
 	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
 		<symbol id="icon-team" viewBox="0 0 30 48">
-
 			<g>
 				<circle cx="2.5" cy="20.5" r="2.5"/>
 				<circle cx="9.5" cy="20.5" r="2.5"/>
 				<circle cx="2.5" cy="27.5" r="2.5"/>
 				<circle cx="9.5" cy="27.5" r="2.5"/>
 			</g>
-
 		</symbol>
 
 	</svg>
@@ -49,14 +45,20 @@
 	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
 		<symbol id="icon-solo" viewBox="0 0 30 48">
-
 			<circle cx="6" cy="24" r="6"/>
-
 		</symbol>
 
 	</svg>
 
-	<header id="hero-index">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+		<symbol id="icon-chevron-up" viewBox="0 0 16 8">
+			<polygon points="8.002,0 0.001,6.449 1.357,7.958 7.997,2.606 14.641,8 16.001,6.496 "/>
+		</symbol>
+
+	</svg>
+
+	<header class="hero-index">
 
 		<div class="masthead-fixed-bg">
 
@@ -75,19 +77,23 @@
 				<p>Focusing on web design, UI & UX</p>
 				<p>Currently lead designer at <a href="https://www.jamendo.com">Jamendo</a></p>
 
-			</div>	
+			</div>
 
 		</div>
 
 	</header>
 
-	<section id="work-showcase">
+	<section class="contact">
+		<div class="container">
+			Please feel free to get in touch: <a href="mailto:lorant.ludovic@gmail.com">lorant.ludovic@gmail.com</a>
+		</div>
+	</section>
+
+	<section class="work-showcase">
 
 		<div class="container">
 
-			<div class="heading">
-				<h1>works</h1>
-			</div>
+			<h1>works</h1>
 
 			<ul>
 
@@ -199,7 +205,8 @@
 
 						<div class="type">
 
-							<svg class="icon solo"><use xlink:href="#icon-solo" /></svg>					
+							<svg class="icon solo"><use xlink:href="#icon-solo" /></svg>
+
 						</div>
 
 						<div>
@@ -439,12 +446,18 @@
 
 		</div>
 
-		<button class="menu-button">
-			<span>toggle menu</span>
-		</button>
-		<div class="menu-overlay" class="is-closed"></button>
-
 	</section>
+
+	<button class="button-menu">
+		<span>toggle menu</span>
+	</button>
+
+	<button class="button-top"><div>
+		<svg class="icon chevron-up"><use xlink:href="#icon-chevron-up" /></svg>
+		</div>
+	</button>
+
+	<div class="menu-overlay" class="is-closed"></button>
 
 </body>
 </html>

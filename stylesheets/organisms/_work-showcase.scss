@@ -1,11 +1,9 @@
-#work-showcase {
+.work-showcase {
 
 	@include rem(padding, 96px 0 32px);
 	background-color: $color-bg-dark;
 	font-weight: 300;
 	color: #FFFFFF;
-
-	.heading { text-align: center; }
 	
 	h1 {
 

@@ -1,0 +1,19 @@
+.contact {
+
+	@include rem(padding, 48px);
+	background-color: $color-brand-blue;
+	color: #FFFFFF;
+	font-weight: 100;
+	line-height: 1.5;
+	text-align: center;
+
+	@include rem(font-size, 24px);
+
+	a {
+
+		color: inherit;
+		font-weight: 400;
+
+	}
+
+}

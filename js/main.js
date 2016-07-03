@@ -1,12 +1,33 @@
 $(function() {
 
-    var menuButton = $('.menu-button');
-	var menuOverlay = $('.menu-overlay');
+    var buttonMenu = $('.button-menu');
+	var overlayMenu = $('.menu-overlay');
+    var buttonTop = $('.button-top');
 
-	menuButton.on('click', function() {
+    $(window).on('scroll', function(){
 
-		$(this).toggleClass('is-active');
-		menuOverlay.toggleClass('is-opened');
+	    if ($(this).scrollTop() > 100) {
+
+	        buttonTop.fadeIn();
+
+	    } else {
+
+	        buttonTop.fadeOut();
+	        
+	    }
+
+	});
+
+	buttonMenu.on('click', function() {
+
+		$(this).toggleClass('is-morphed');
+		overlayMenu.toggleClass('is-opened');
+
+	});
+
+	buttonTop.on('click', function() {
+
+		$('html, body').animate({scrollTop : 0}, 500);
 
 	});
 
