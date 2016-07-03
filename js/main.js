@@ -6,7 +6,7 @@ $(function() {
 	menuButton.on('click', function() {
 
 		$(this).toggleClass('is-active');
-		//menuOverlay.toggleClass('is-opened');
+		menuOverlay.toggleClass('is-opened');
 
 	});
 
