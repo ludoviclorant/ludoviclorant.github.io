@@ -1,12 +1,18 @@
-.logo { fill: #000000; }
+.logo {
+
+	@include rem(width, 33px);
+	@include rem(height, 48px);
+	fill: #000000;
+
+}
 
 .icon {
 
     &.team,
     &.solo {
 
-        width: 30px;
-        height: 48px;
+       	@include rem(width, 30px);
+		@include rem(height, 48px);
         fill: #FFFFFF;
 
     }
