@@ -1,0 +1,27 @@
+.hero-index .masthead-fixed-bg {
+
+	background-image: url('images/hero/heres-me-good-ol-face-landscape-sm.jpg');
+	background-position: center top;
+	background-size: cover;
+
+	@media only screen and (min-width: 801px) {
+		background-image: url('images/hero/heres-me-good-ol-face-landscape-md.jpg');
+	}
+	@media only screen and (min-width: 1025px) {
+		background-image: url('images/hero/heres-me-good-ol-face-landscape-lg.jpg');
+	}
+
+	@media only screen and (min-width: 1367px) {
+		background-image: url('images/hero/heres-me-good-ol-face-landscape-xl.jpg');
+	}
+
+
+	@media only screen and (orientation: portrait) {
+		background-image: url('images/hero/heres-me-good-ol-face-portrait-sm.jpg');
+	}
+
+	@media only screen and (orientation: portrait) and (min-width: 401px) {
+		background-image: url('images/hero/heres-me-good-ol-face-portrait-xl.jpg');
+	}
+
+}
