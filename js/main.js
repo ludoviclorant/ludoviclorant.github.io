@@ -54,7 +54,8 @@ $(function() {
 
 	buttonTop.on('click', function() {
 
-		body.animate({scrollTop : 0}, 500);
+		//body.animate({scrollTop : 0}, 500);
+		window.scrollTo(0, 0);
 
 	});
 
