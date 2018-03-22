@@ -5,7 +5,6 @@ $(function() {
     var buttonTop = $('.button-top');
 
     var html = $('html');
-    var body = $('body');
 
     $(window).on('scroll', function(){
 
@@ -38,14 +37,14 @@ $(function() {
 
 		if(overlayCount % 2 !== 0) { //opened
 
-			scrollPos = body.scrollTop();
+			scrollPos = html.scrollTop();
 			menuClassToggles();
 			html.css('top', '-'+scrollPos+'px');
 
 		}else{
 
 			menuClassToggles();
-			body.scrollTop(scrollPos);
+			html.scrollTop(scrollPos);
 			html.css('top', '0');
 
 		}
@@ -54,8 +53,7 @@ $(function() {
 
 	buttonTop.on('click', function() {
 
-		//body.animate({scrollTop : 0}, 500);
-		window.scrollTo(0, 0);
+		html.animate({scrollTop : 0}, 500);
 
 	});
 
