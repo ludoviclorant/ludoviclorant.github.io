@@ -77,7 +77,7 @@
 	.description {
 
 		@include rem(margin-bottom, 40px);
-		line-height: 2;
+		line-height: 1.7;
 
 	}
 
@@ -92,8 +92,16 @@
 			vertical-align: top;
 
 		}
-
-		.type .s { margin-top: -1px; }
+		
+		.type {
+		
+			@include rem(font-size, 12px);
+			line-height: 4;
+			@include rem(padding-right, 12px);
+			@include rem(height, 48px);
+			@include rem(min-width, 48px); 
+		
+		}
 		
 		.list { display: inline-block; }
 
@@ -107,9 +115,11 @@
 			white-space: nowrap;
 			margin-top: -1px;
     		margin-left: -1px;
+			
+			&:last-child { @include rem(margin-right, 32px); }
 
 		}
-
+		
 		&:last-of-type { @include rem(margin-bottom, 48px); }
 
 	}
@@ -155,9 +165,7 @@
 			margin-bottom: 0;
 
 		}
-
-		.skills li:last-child { @include rem(margin-right, 32px); }
-
+		
 	}
 
 	@media screen and (min-width : 1024px) {
