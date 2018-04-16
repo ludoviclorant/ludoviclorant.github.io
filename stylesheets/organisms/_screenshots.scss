@@ -1,0 +1,27 @@
+.screenshots {
+
+	.screenshot {
+	
+		background-color: lighten($color-bg-dark, 5%);
+		padding-bottom: percentage(768/1366);
+		position: relative;		
+		
+		&:not(:last-child) { @include rem(margin-bottom, 16px); }
+		
+		> div {
+		
+			position: absolute;
+			@extend %BOX-FILL;
+			
+			> img {
+			
+				@extend %IMG-FILL;
+				@extend %IMG-CRISP-SCALING;
+			
+			}
+		
+		}
+	
+	}
+	
+}
