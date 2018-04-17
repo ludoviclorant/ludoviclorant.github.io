@@ -1,8 +1,17 @@
 .screenshots {
 
+	img {
+	
+		@extend %IMG-FILL;
+		@extend %IMG-CRISP-SCALING;
+		
+	}
+
+	.screenshot,
+	.screenshots-mobile { background-color: lighten($color-bg-dark, 5%); }
+
 	.screenshot {
 	
-		background-color: lighten($color-bg-dark, 5%);
 		padding-bottom: percentage(768/1366);
 		position: relative;		
 		
@@ -12,14 +21,43 @@
 		
 			position: absolute;
 			@extend %BOX-FILL;
-			
-			> img {
-			
-				@extend %IMG-FILL;
-				@extend %IMG-CRISP-SCALING;
-			
-			}
 		
+		}
+	
+	}
+	
+	.screenshots-mobile {
+	
+		@include rem(padding, 16px);
+		display: table;
+		width: 100%;
+		
+		> div { 
+		
+			display: table-cell;
+			
+			&:first-child,
+			&:last-child { width: 50%; }
+			
+			&:first-child {
+			
+				text-align: right;
+				
+			}
+			
+			&:last-child {
+			
+				text-align: left;
+				
+			}
+			
+		}
+		
+		img {
+		
+			@include rem(padding, 16px);			
+			max-width: 360px;
+			
 		}
 	
 	}
