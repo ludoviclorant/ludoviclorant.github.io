@@ -105,6 +105,7 @@
 	left: 0;
 	@include rem(padding, 14px 12px);
 	right: auto;
+	z-index: $z-button-top;
 
 }
 
