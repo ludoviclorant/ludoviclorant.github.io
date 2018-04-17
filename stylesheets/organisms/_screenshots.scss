@@ -28,36 +28,29 @@
 	
 	.screenshots-mobile {
 	
-		@include rem(padding, 16px);
-		display: table;
+		@include rem(padding, 16px 8px);
+		text-align: center;
 		width: 100%;
-		
-		> div { 
-		
-			display: table-cell;
-			
-			&:first-child,
-			&:last-child { width: 50%; }
-			
-			&:first-child {
-			
-				text-align: right;
-				
-			}
-			
-			&:last-child {
-			
-				text-align: left;
-				
-			}
-			
-		}
 		
 		img {
 		
-			@include rem(padding, 16px);			
+			@include rem(padding, 0 8px);			
 			max-width: 360px;
 			
+		}
+		
+		.wrap {
+		
+			display: inline-block;
+			
+			> div {
+			
+				display: table;
+				
+				> div { display: table-cell; }
+				
+			}
+		
 		}
 	
 	}

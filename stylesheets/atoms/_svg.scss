@@ -10,19 +10,18 @@
 
 	fill: #FFFFFF;
 
-    &.team,
-    &.solo {
-
-       	@include rem(width, 30px);
-		@include rem(height, 48px);        
-
-    }
-
     &.chevron-up {
 
        	@include rem(width, 16px);
 		@include rem(height, 8px);
 
     }
+	
+	&.back {
+	
+		@include rem(width, 16px);
+		@include rem(height, 12px);
+	
+	}
 
 }
