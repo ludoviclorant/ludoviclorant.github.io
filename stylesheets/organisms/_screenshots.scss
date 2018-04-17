@@ -1,5 +1,7 @@
 .screenshots {
 
+	@include rem(margin-top, 36px);
+
 	img {
 	
 		@extend %IMG-FILL;

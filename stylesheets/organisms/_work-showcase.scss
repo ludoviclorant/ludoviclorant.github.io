@@ -178,3 +178,14 @@
 	}
 
 }
+
+.project-name {
+
+	@include rem(font-size, 32px);
+	font-weight: 400;
+	line-height: 1.2;
+	color: #FFFFFF;
+
+	h1, h2 { display: inline; }
+
+}
