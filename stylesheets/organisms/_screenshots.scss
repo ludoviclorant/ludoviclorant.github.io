@@ -9,27 +9,16 @@
 		
 	}
 
-	.screenshot,
-	.screenshots-mobile { background-color: lighten($color-bg-dark, 5%); }
-
 	.screenshot {
-	
-		padding-bottom: percentage(768/1366);
-		position: relative;		
 		
+		font-size: 0;
 		&:not(:last-child) { @include rem(margin-bottom, 16px); }
-		
-		> div {
-		
-			position: absolute;
-			@extend %BOX-FILL;
-		
-		}
 	
 	}
 	
 	.screenshots-mobile {
 	
+		background-color: lighten($color-bg-dark, 5%);
 		@include rem(padding, 16px 8px);
 		text-align: center;
 		width: 100%;
