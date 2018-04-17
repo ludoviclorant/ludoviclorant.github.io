@@ -112,6 +112,7 @@
 .menu-overlay {
 
 	@extend %BOX-FILL;
+	height: 100vh;
 	position: fixed;
 	z-index: $z-overlay-menu;
 	opacity: 0;

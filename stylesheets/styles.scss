@@ -9,6 +9,9 @@
 @import "core/reset";
 @import "core/base";
 
+@import "patterns/box";
+@import "patterns/img";
+
 @import "atoms/svg";
 
 @import "organisms/contact";
@@ -17,6 +20,3 @@
 @import "organisms/masthead-hero";
 @import "organisms/screenshots";
 @import "organisms/work-showcase";
-
-@import "patterns/box";
-@import "patterns/img";

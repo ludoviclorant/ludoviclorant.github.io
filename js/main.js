@@ -27,7 +27,6 @@ $(function() {
 
 		buttonMenu.toggleClass('is-morphed');
 		overlayMenu.toggleClass('is-opened');
-		overlayMenu.css({'bottom': 0 });
 		html.toggleClass('no-scroll');
 
 	}
