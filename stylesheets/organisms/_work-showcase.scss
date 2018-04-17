@@ -176,7 +176,7 @@
 	width: 100%;
 	text-align: center;
 	position: relative;
-	@include rem(padding-top, 8px);
+	@include rem(padding-top, 16px);
 	z-index: 0;
 	
 	&:before {
@@ -187,7 +187,7 @@
 		height: 1px;
 		background-color: $color-text;
 		position: absolute;
-		top: 29px;
+		top: 40px;
 		left: 0;
 		z-index: -1;
 	
@@ -196,11 +196,13 @@
 	a {
 	
 		color: #FFFFFF;
-		@include rem(font-size, 10px);
-		@include rem(padding, 16px);
+		@include rem(font-size, 16px);
+		@include rem(padding, 15px);
 		text-transform: uppercase;
 		background-color: $color-bg-dark;	
 		display: inline-block;
+		border: 1px solid $color-text;
+		text-decoration: none;
 	
 	}
 
