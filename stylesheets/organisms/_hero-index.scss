@@ -13,7 +13,7 @@
 		color: $color-brand-blue;
 		text-transform: uppercase;
 
-		p, h1 { @include rem(margin-bottom, 48px); }
+		p, h1 { @include rem(margin-bottom, 36px); }
 
 		span { color: $color-brand-red; }
 
@@ -48,7 +48,7 @@
 
 			@include rem(font-size, 80px);
 
-			p, h1 { @include rem(margin-bottom, 80px); }
+			p, h1 { @include rem(margin-bottom, 60px); }
 
 		}
 
@@ -72,7 +72,7 @@
 
 			@include rem(font-size, 112px);
 
-			p, h1 { @include rem(margin-bottom, 112px); }
+			p, h1 { @include rem(margin-bottom, 84px); }
 
 		}
 
