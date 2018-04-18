@@ -186,7 +186,7 @@
 		height: 1px;
 		background-color: $color-text;
 		position: absolute;
-		top: 40px;
+		top: 38px;
 		left: 0;
 		z-index: -1;
 	
@@ -195,13 +195,15 @@
 	a {
 	
 		color: #FFFFFF;
-		@include rem(font-size, 16px);
-		@include rem(padding, 15px);
+		@include rem(font-size, 14px);
+		@include rem(padding, 14px);
 		text-transform: uppercase;
 		background-color: $color-bg-dark;	
 		display: inline-block;
-		border: 1px solid $color-text;
+		border: 3px solid $color-text;
 		text-decoration: none;
+		
+		&:hover { background-color: lighten($color-bg-dark, 3%); }
 	
 	}
 
