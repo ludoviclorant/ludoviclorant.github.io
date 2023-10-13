@@ -16,11 +16,11 @@
 
       @if $unit == "px" {
         $px : append($px,  $value);
-        $rem: append($rem, ($val / 16 + rem));
+        $rem: append($rem, (calc($val / 16) + rem));
       }
 
       @if $unit == "rem" {
-        $px : append($px,  ($val * 16 + px));
+        $px : append($px,  (calc($val * 16) + px));
         $rem: append($rem, $value);
       }
     }
