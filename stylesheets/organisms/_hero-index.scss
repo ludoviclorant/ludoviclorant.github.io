@@ -11,7 +11,7 @@
 
 		font-size: 1rem;
 		font-family: 'Merriweather', sans-serif;
-		line-height: 3rem;
+		line-height: 1.2rem;
 		color: $color-text;
 
 		> :first-child, > :last-child {
@@ -26,6 +26,7 @@
 			font-weight: 700;
 			max-width: 58.5rem;
 			margin: 2rem auto;
+			padding: 0 1rem;
 
 		}
 
@@ -75,7 +76,7 @@
 
 	@media screen and (min-width : 768px) {
 	
-		.masthead { font-size: 2rem; }
+		.masthead { font-size: 2rem; line-height: 2.5rem; }
 
 	}
 
@@ -83,7 +84,7 @@
 
 	@media screen and (min-width : 1680px) {
 	
-		.masthead { font-size: 2.5rem; }
+		.masthead { font-size: 2.5rem; line-height: 3rem; }
 
 	}
 
