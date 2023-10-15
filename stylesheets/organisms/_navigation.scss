@@ -1,184 +1,99 @@
-.button-menu,
+.navigation-header {
+
+	background-color: $color-white;
+	position: fixed;
+	width: 100%;
+	display: block;
+	z-index: $z-nav-header;
+	border-bottom: 1px solid $color-text-light;
+
+	.wrapper {
+
+		margin: 0 auto;
+		height: 3rem; 
+		max-width: 1440px;
+		padding: 0 1.875rem;
+		display: flex;
+    	justify-content: space-between;
+		align-items: center;
+
+	} 
+
+}
+
+.navigation {
+	
+	font-family: 'Inter', serif;
+	font-weight: 600;
+
+	li { 
+			
+		display: inline-block;
+		margin-right: 1rem;
+
+		&:last-child { margin-right: 0; }
+
+	}
+
+	a {
+
+		color: $color-text;
+		position: relative;
+		font-size: .875rem;
+		line-height: 1.25rem;
+		display: inline-block;
+		text-decoration: none;
+
+		&:hover, &.current {
+
+			color: $color-brand;
+
+			&::after {
+
+				content: " ";
+				position: absolute;
+				bottom: -.125rem;
+				display: block;
+				height: .125rem;
+				background-color: $color-brand;
+				border-radius: 1rem;
+				width: 100%;
+	
+			}
+
+		}
+
+	}
+
+}
+
 .button-top,
 .button-back {
 
 	display: block;
 	position: fixed;
-	overflow: hidden;
-	right: 0;
+	overflow: hidden; 
 	width: 40px;
 	height: 40px;
-	background-color: $color-bg-dark;
-	z-index: $z-button-menu;
+	background-color: $color-text;
+	z-index: $z-nav-button;
 
-	&:active { background-color: $color-bg-dark; }
-
-}
-
-.button-menu {
-
-	top: 0;
-	font-size: 0;
-	text-indent: -9999px;
-	
-  	span {
-
-  		display: block;
-		position: absolute;
-		top: 19px;
-		left: 12px;
-		right: 12px;
-		height: 2px;
-		background: white;
-		transition: background 0s 0.2s;
-  		background: none;
-
-		&:before,
-		&:after {
-
-			position: absolute;
-			display: block;
-			left: 0;
-			width: 100%;
-			height: 2px;
-			background-color: #fff;
-			content: "";
-			transition-duration: 0.2s, 0.2s;
-  			transition-delay: 0.2s, 0s;
-
-		}
-
-		&:before {
-
-			top: -3px;
-			transition-property: top, transform;
-
-		}
-
-		&:after {
-
-			bottom: -3px;
-			transition-property: bottom, transform;
-
-		}
-
-  	}
-
-  	&.is-morphed {
-
-		span {
-
-			&:before {
-
-				top: 0;
-  				transform: rotate(45deg);
-
-			}
-
-			&:after {
-
-				bottom: 0;
-				transform: rotate(-45deg);
-
-			}
-
-			&:before,
-			&:after { transition-delay: 0s, 0.2s; }
-
-		}
-
-  	}
+	&:hover, :active { background-color: $color-brand; }
 
 }
 
 .button-top {
 
+	right: 0;
 	bottom: 0;
 	display: none;
-	z-index: $z-button-top;
-
+ 
 }
 
 .button-back {
 
 	top: 0;
 	left: 0;
-	@include rem(padding, 14px 12px);
-	right: auto;
-	z-index: $z-button-top;
-
-}
-
-.menu-overlay {
-
-	@extend %BOX-FILL;
-	height: 100vh;
-	position: fixed;
-	z-index: $z-overlay-menu;
-	opacity: 0;
-	visibility: hidden;
-	background-color: $color-bg-dark;
-	transition: all .15s linear;
-	display: table;
-	overflow-y: scroll;
-
-	nav {
-
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
-		@include rem(padding, 30px);
-
-		a {
-
-			@include rem(font-size, 32px);
-			position: relative;
-			line-height: 1.7;
-			text-transform: uppercase;
-			text-decoration: none;
-			font-weight: 100;
-			transition: color .3s linear;
-
-			&:before {
-
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				height: 1px;
-				background-color: darken(#FFFFFF, 50%);
-				width: 100%;
-				transition: background-color .3s linear;
-
-			}
-
-			&:link,
-			&:visited { color: darken(#FFFFFF, 50%); }
-			&:hover,
-			&:active { 
-
-				color: #FFFFFF;
-
-				&:before { background-color: #FFFFFF; }
-
-			}
-
-		}
-
-	}
-	
-	&.is-opened {
-	
-		visibility: visible;
-		opacity: .99;
-	
-	}
-
-	@media screen and (min-width : 768px) {
-
-		nav a { @include rem(font-size, 48px); }
-
-	}
+	@include rem(padding, 13px 12px);
 
 }

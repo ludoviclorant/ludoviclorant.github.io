@@ -18,7 +18,7 @@
 	
 	.screenshots-mobile {
 	
-		background-color: lighten($color-bg-dark, 5%);
+		background-color: lighten($color-text, 5%);
 		@include rem(padding, 16px 8px);
 		text-align: center;
 		width: 100%;

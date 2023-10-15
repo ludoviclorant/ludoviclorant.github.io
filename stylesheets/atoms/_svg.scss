@@ -1,8 +1,8 @@
 .logo {
 
-	@include rem(width, 33px);
-	@include rem(height, 48px);
-	fill: #000000;
+	@include rem(width, 16.67px);
+	@include rem(height, 24px);
+	fill: $color-text;
 
 }
 
@@ -20,7 +20,7 @@
 	&.back {
 	
 		@include rem(width, 16px);
-		@include rem(height, 12px);
+		@include rem(height, 16px);
 	
 	}
 

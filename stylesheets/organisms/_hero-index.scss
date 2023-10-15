@@ -1,56 +1,81 @@
 .hero-index {
 
 	position: relative;
-	@include rem(padding, 48px 0);
-
-	.logo { @include rem(margin-bottom, 24px); }
 
 	.masthead {
 
-		@include rem(font-size, 48px);
-		font-family: 'Oswald', sans-serif;
-		line-height: 1.2;
-		color: $color-brand-blue;
-		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		height: 90vh;
+		align-items: stretch;
 
-		p, h1 { @include rem(margin-bottom, 36px); }
+		font-size: 1rem;
+		font-family: 'Merriweather', sans-serif;
+		line-height: 3rem;
+		color: $color-text;
 
-		span { color: $color-brand-red; }
+		> :first-child, > :last-child {
+			
+			flex: 1;
+			position:relative;
+		
+		}
 
-		a:link, a:visited { color: $color-brand-blue; }
-		a:hover, a:active { color: darken($color-brand-blue, 10%); }
+		.text {
 
-		&-fixed-bg {
+			font-weight: 700;
+			max-width: 58.5rem;
+			margin: 2rem auto;
 
-			@extend %BOX-FILL;
-			position: fixed;
-			z-index: $z-masthead-fixed-bg;
+		}
+
+		h1, p { display: inline; }
+	}
+
+	.arrow-transition {
+
+		position: relative;
+		width: 100%;
+		background-color: $color-white;
+		height: 24px;
+
+		> div::after {
+
+			content:" ";
+			display: block;
+			width: 9px;
+			left: 50%;
+			margin-left: -4px;
+			background-color: $color-text;
+			height: 1px;
+			position: absolute;
+			bottom: 4px;
 
 		}
 
 	}
 
+	.masthead > :last-child, .arrow-transition {
+		
+		&::after {
 
+			content: " ";
+			height: 100%;
+			display: block;
+			width: 1px;
+			background-color: $color-text;
+			position: absolute;
+			left:50%;
+			top: 0;
+			bottom: 0;
+
+		}
+
+	}
 
 	@media screen and (min-width : 768px) {
 	
-		@include rem(padding, 80px 0);
-
-		.logo { 
-
-			@include rem(margin-bottom, 40px);
-			@include rem(width, 55px);
-			@include rem(height, 80px);
-
-		}
-
-		.masthead {
-
-			@include rem(font-size, 80px);
-
-			p, h1 { @include rem(margin-bottom, 60px); }
-
-		}
+		.masthead { font-size: 2rem; }
 
 	}
 
@@ -58,23 +83,7 @@
 
 	@media screen and (min-width : 1680px) {
 	
-		@include rem(padding, 112px 0);
-
-		.logo { 
-
-			@include rem(margin-bottom, 56px);
-			@include rem(width, 77px);
-			@include rem(height, 112px);
-
-		}
-
-		.masthead {
-
-			@include rem(font-size, 112px);
-
-			p, h1 { @include rem(margin-bottom, 84px); }
-
-		}
+		.masthead { font-size: 2.5rem; }
 
 	}
 

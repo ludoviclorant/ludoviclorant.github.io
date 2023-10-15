@@ -1,9 +1,14 @@
 .hero-index .masthead-fixed-bg {
 
-	background-image: url('images/hero/heres-me-good-ol-face-landscape-sm.jpg');
+	background-image: url('images/hero/MESHGRAD-Zircon.webp');
 	background-position: center top;
 	background-size: cover;
 
+	@extend %BOX-FILL;
+	position: fixed;
+	z-index: $z-masthead-fixed-bg;
+
+	/*
 	@media only screen and (min-width: 801px) {
 		background-image: url('images/hero/heres-me-good-ol-face-landscape-md.jpg');
 	}
@@ -23,5 +28,6 @@
 	@media only screen and (orientation: portrait) and (min-width: 401px) {
 		background-image: url('images/hero/heres-me-good-ol-face-portrait-xl.jpg');
 	}
+	*/
 
 }

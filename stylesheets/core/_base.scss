@@ -13,15 +13,21 @@ html {
 		position: fixed;
 
 	}
-	
-	&.work-extended { background-color: $color-bg-dark; }
+
+	&.work-extended {
+
+		background-color: $color-text;
+
+		h1 { color:$color-white; }
+
+	}
 
 }
 
 body {
 
 	font-size: 1rem;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Merriweather', serif;
 	@include rem(min-width, 320px);
 
 }
