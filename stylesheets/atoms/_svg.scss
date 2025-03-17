@@ -1,7 +1,7 @@
 .logo {
 
-	@include rem(width, 16.67px);
-	@include rem(height, 24px);
+	@include rem(width, 22.22px);
+	@include rem(height, 32px);
 	fill: $color-text;
 
 }
@@ -25,3 +25,21 @@
 	}
 
 }
+
+.sunn {
+
+	fill: none;
+	width: 100%;
+	height: 100%;
+
+}
+
+.jamendo-music-logo, .jamendo-licensing-logo {
+
+	fill: white;
+	height: 72px;	
+
+}
+
+.jamendo-music-logo { width: 184px; }
+.jamendo-licensing-logo { width: 206px; }

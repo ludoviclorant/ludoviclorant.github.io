@@ -1,66 +1,116 @@
-.navigation-header {
+#header {
 
-	background-color: $color-white;
 	position: fixed;
 	width: 100%;
 	display: block;
 	z-index: $z-nav-header;
-	border-bottom: 1px solid $color-text-light;
-
-	.wrapper {
-
-		margin: 0 auto;
-		height: 3rem; 
-		max-width: 1440px;
-		padding: 0 1.875rem;
-		display: flex;
-    	justify-content: space-between;
-		align-items: center;
-
-	} 
-
-}
-
-.navigation {
+	height: 64px;
+	background-color: $color-background;
 	
-	font-family: 'Inter', serif;
-	font-weight: 600;
+	> * { vertical-align: middle; }
 
-	li { 
-			
+	.logo-wrapper {
+
 		display: inline-block;
-		margin-right: 1rem;
+		position: relative;
+		width: 64px;
+		height: 64px;
+		background-color: $color-background;
 
-		&:last-child { margin-right: 0; }
+		svg {
+
+			margin-top: 16px;
+			margin-left: 20.89px; 
+
+		}
 
 	}
 
-	a {
-
-		color: $color-text;
-		position: relative;
-		font-size: .875rem;
-		line-height: 1.25rem;
+	.left,
+	.right {
+		
+		z-index: 1;
 		display: inline-block;
-		text-decoration: none;
+		height: 64px;
 
-		&:hover, &.current {
+		span {
 
-			color: $color-brand;
+			background-color: $color-background;
+			color: $color-text;
+			font-size: 16px;
+			letter-spacing: 1px;
+			font-weight: 500;
+			line-height: 64px;
 
-			&::after {
+		}
 
-				content: " ";
-				position: absolute;
-				bottom: -.125rem;
-				display: block;
-				height: .125rem;
-				background-color: $color-brand;
-				border-radius: 1rem;
-				width: 100%;
+	}
 	
-			}
+	.right span { padding-right: 21px; }
 
+	&::before {
+
+		content: " ";
+		position: absolute;
+		//width: calc(100% - 42px);
+		top:50%;
+		display: block;
+		height: 1px;
+		background-color: $color-text;
+		//margin-left: 21px;
+		width: 100%;
+		z-index: -1;
+
+	}
+
+	@media screen and (max-width : 767px) { 
+
+		.left span::after { 
+			
+			content: "\00a0/\00a0 "; 
+			font-weight: 300;		
+		
+		}
+
+		.left, .right {
+
+			span { font-size: 12px; }
+
+		}
+
+	}
+
+	@media screen and (min-width : 768px) { 
+
+		.left,
+		.right {
+
+			width: calc(50% - 85px);
+			text-align: center;
+
+			span { padding: 0 16px; }
+
+		}
+
+		.left { margin: 0 21px 0 64px; }
+		.right { margin: 0 64px 0 21px; }
+
+		.logo-wrapper {
+
+			position: absolute;
+			left:50%;
+			margin-left: -32px;
+			top: 0;			
+
+		}
+
+		&::before {
+		
+			//width: calc(100% - 128px);
+			//margin-left: 64px;
+			width: 100%;
+			margin-left: 0;
+		
 		}
 
 	}
@@ -75,7 +125,7 @@
 	overflow: hidden; 
 	width: 40px;
 	height: 40px;
-	background-color: $color-text;
+	background-color: $color-background-light;
 	z-index: $z-nav-button;
 
 	&:hover, :active { background-color: $color-brand; }
