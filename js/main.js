@@ -41,9 +41,13 @@ $(function() {
 		scrollToAnchor("hitmeup");
 	} );
 
-	$(".email").on( "click", function() {
+	$(".email").on( "click", function(e) {
+
+		e.preventDefault();
+
 		navigator.clipboard.writeText("lorant.ludovic@gmail.com");
 		alert("Email has been copied to your clipboard!");
+		
 	} );
 
 });
