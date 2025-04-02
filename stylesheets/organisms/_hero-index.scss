@@ -445,3 +445,13 @@
 	@media screen and (min-width: 1900px) { .text { margin-top: 4rem; } }
 
 }
+
+html.no-touch .masthead {
+
+	.email, .cv {
+
+		&:link, &:visited, &:active, &:hover { text-decoration: none; }
+
+	}
+
+}

@@ -1,6 +1,10 @@
+if (!("ontouchstart" in document.documentElement)) {
+	document.documentElement.className += " no-touch";
+}
+
 $(function() {
 
-    var buttonTop = $('.button-top');
+	var buttonTop = $('.button-top');
 
     var html = $('html');
 
@@ -47,7 +51,7 @@ $(function() {
 
 		navigator.clipboard.writeText("lorant.ludovic@gmail.com");
 		alert("Email has been copied to your clipboard!");
-		
+
 	} );
 
 });
