@@ -92,20 +92,13 @@
 			height: 3rem;
 			line-height: 0;
 
-			&:link, &:visited {
+			&:link, &:visited, &:active {
 
 				background-color: #FFFFFF;
 
 			}
 			
-			&:hover, &:active {
-
-				background-color: #0a68be;
-
-				img:first-child { display:none; }
-				img:last-child { display:inline; }
-
-			}
+			
 
 			img { 
 
@@ -442,6 +435,19 @@ html.no-touch .hero-index .masthead {
 	.email, .cv {
 
 		&:active, &:hover { text-decoration: underline; }
+
+	}
+
+	.linkedin {
+
+		&:hover, &:active {
+
+			background-color: #0a68be;
+
+			img:first-child { display:none; }
+			img:last-child { display:inline; }
+
+		}
 
 	}
 
