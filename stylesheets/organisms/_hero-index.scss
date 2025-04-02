@@ -122,17 +122,8 @@
 			color: $color-text;
 			font-size: 1.25rem;
 
-			&:link, &:visited, &:active {
+			&:link, &:visited, &:active, &:hover { text-decoration: none; }
 
-				text-decoration: none;
-
-			}
-			
-			&:hover {
-
-				text-decoration: underline;
-
-			}
 		}
 
 	}
@@ -450,7 +441,7 @@ html.no-touch .hero-index .masthead {
 
 	.email, .cv {
 
-		&:link, &:visited, &:active, &:hover { text-decoration: none; }
+		&:active, &:hover { text-decoration: underline; }
 
 	}
 
